@@ -1,0 +1,58 @@
+.healthbook-h1 {
+    font-size: 2em;
+    font-family: Comfortaa, sans-serif;
+    color: black;
+    width: 100%;
+    border-bottom: 1px solid #ED1944;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 13%;
+    padding-left: 10%;
+}
+
+.healthbook-fontawesome2 {
+    font-size: 1em;
+    color: #ED1944;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.healthbook-fontawesome2-right {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+}
+
+.healthbook-section-data {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: montserrat, sans-serif;
+    font-size: 1.3em;
+    background-color: #F9F9FA;
+}
+
+.healthbook-section-row{
+    line-height: 1.8em;
+}
+.healthbook-section-entry-icon-container {
+    max-width: 5%;
+}
+
+.healthbook-section-entry-icon {
+    font-size: 1em;
+    color: #ED1944;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+
+.healthbook-section-entry-text {
+    padding-left: 5px;
+    width: 100%;
+}
+
+/* veterinary contact details */
+.healthbook-section-contact {
+    margin-left: 1rem;
+}

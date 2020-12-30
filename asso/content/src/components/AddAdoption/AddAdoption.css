@@ -1,0 +1,224 @@
+.adoption-main-title {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.adoption-container {
+    padding: 0 5%;
+}
+
+.adoption-error{
+    color: #ED1944;
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    background-color: rgba(237, 25, 68, 0.1);
+    margin: 0;
+    animation: newsletterCheck 1s ease-in-out;
+}
+
+.error-input{
+    border-bottom: #ED1944 solid 0.1rem;
+}
+
+.adoption-navigation {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.adoption-nav-left {
+    width: 50%;
+    display: flex;
+}
+
+.adoption-nav-item {
+    text-align: center;
+    line-height: 2rem;
+    flex: 1;
+    font-family: Montserrat, sans-serif;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    background: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.adoption-nav-item-active {
+    background: #13e2C1;
+    color: #FFFFFF;
+}
+
+.adoption-searchbar {
+    width: 50%;
+    display: flex;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    background: -webkit-linear-gradient(45deg, #13E2BA 50%, #13E2E2);
+}
+
+.adoption-search-input {
+    background: #FFFFFF;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.adoption-search-input i {
+    margin-left: 10px;
+}
+
+.adoption-search-input input {
+    background: transparent;
+    border: none;
+    margin-left: .5rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.adoption-pet-list {
+    background: #FFFFFF;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    height: 65vh;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+#adoption-search-input::placeholder{
+    color:  #13e2C1;
+    font-family: Montserrat, sans-serif;
+}
+
+#adoption-search-input:focus{
+    outline: none;
+}
+
+.mpl-profile-picture-new {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    height: 20vh;
+    width: 20vh;
+    margin: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.mpl-profile-picture-overlay-container-new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mpl-profile-picture-overlay-new {
+    margin: auto;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.mpl-profile-picture-overlay-new:hover {
+    opacity: 1;
+    background-color: rgba(250, 250, 250, 0.75);
+}
+
+.adoption-pet-card-new {
+    border-radius: 10px;
+    height: 85vh;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.adoption-pet-card-right {
+    background: transparent;
+    height: 80vh;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 15px;
+}
+
+.adoption-selector-active{
+    background-color: #13e2ba !important;
+}
+
+.adoption-right-selector{
+    background-color: #F6F6F6;
+    width: 50%;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.adoption-selector-text{
+    width: fit-content;
+    margin: auto;
+}
+
+.adoption-left-selector{
+    width: 50%;
+    background-color: #F6F6F6;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.adoption-selector-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.adoption-selector-container p{
+    margin: auto;
+}
+
+.adoption-small{
+    font-size: 0.8rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.adoption-pet-details {
+    background: #FFFFFF;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    margin-right: .5rem;
+    height: 65vh;
+}
+
+.mpl-profile-picture-view{
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+}
+
+.mpl-view-content{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.new-adoption-name{
+    font-size: 3rem;
+}
+
+.blue-icon {
+    width: 20px;
+    margin-right: 5px;
+    text-align: center;
+    background: -webkit-linear-gradient(45deg, #13E2BA, #13E2E2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

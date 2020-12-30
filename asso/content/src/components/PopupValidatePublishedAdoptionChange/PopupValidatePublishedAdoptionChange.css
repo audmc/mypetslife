@@ -1,0 +1,57 @@
+.popup-edit-profile-picture {
+    width: 100%;
+    min-width: 500px;
+    height: 100%;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+
+.popup-edit-profile-picture-header {
+    text-align: center;
+    color: #13e2ba;
+}
+
+@media (max-width: 992px) {
+    .popup-edit-profile-picture {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .popup-edit-profile-picture {
+        padding: 1rem;
+    }
+}
+
+
+.YpD9o6H9LydyYmaPWOwt {
+    transition: .2s ease-in-out;
+}
+
+.YpD9o6H9LydyYmaPWOwt:hover {
+    background-color: rgba(19, 226, 186, 0.25);
+}
+
+.kWobJZ5IBLVJtFBD9JHAQ:focus {
+    outline: none;
+}
+
+.eXEoGG26iwSi6UiZD8FI6:focus {
+    outline: none;
+}
+
+.fe6xZVPr1kb0CJksW39zV {
+    margin: 0;
+}
+
+._23VzqtDiBsdmyddgDcP2FF, ._2JJI18xT4B0iIKyuZLMpk9 {
+    fill: #1de9b6 !important;
+}
+
+.Icon--trash {
+    fill: #333333;
+}
+
+._2JJI18xT4B0iIKyuZLMpk9 {
+    transform: scale(1.5);
+}

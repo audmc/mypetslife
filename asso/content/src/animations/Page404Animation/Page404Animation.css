@@ -1,0 +1,85 @@
+#Page404Animation #Head_Front_Chongo {
+    animation: Hairs 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#Page404Animation #not-found-bg {
+    animation: Page404Bg 4s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Page404Animation #Web {
+    animation: web 2.5s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Page404Animation #Mobile2 {
+    animation: mobile 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Page404Animation #Mobile3 {
+    animation: mobile 4s ease-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Page404Animation #Icon_awesome-paw {
+    animation: notfoundIcon 3s ease-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Page404Animation #Icon_awesome-heart {
+    animation: notfoundIcon 2s ease-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes web {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg) scale(1);
+    }
+    to {
+        transform: rotateX(2deg) rotateZ(-3deg) scale(1.05);
+    }
+}
+
+@keyframes mobile {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg) scale(1);
+    }
+    to {
+        transform: rotateX(5deg) rotateZ(-5deg) scale(1.1);
+    }
+}
+
+@keyframes Hairs {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(5deg) rotateZ(5deg);
+    }
+}
+
+@keyframes Page404Bg {
+    from {
+        transform: scale(0.96) rotate(0);
+    }
+    to {
+        transform: scale(1) rotate(-1deg);
+    }
+}
+@keyframes notfoundIcon {
+    from {
+        transform: scale(1) rotate(0);
+    }
+    to {
+        transform: scale(1.1) rotate(5deg);
+    }
+}

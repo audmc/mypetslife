@@ -1,0 +1,140 @@
+<%- include('emailStylesheet')%>
+
+<body style="padding: 0; margin: 0;" bgcolor="#eeeeee">
+
+<table class="full-width-container" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="#eeeeee" style="width: 100%; height: 100%; padding: 30px 0 30px 0;">
+    <tr>
+        <td align="center" valign="top">
+            <table class="container" border="0" cellpadding="0" cellspacing="0" width="700" bgcolor="#ffffff" style="width: 700px;">
+                <tr>
+                    <td align="center" valign="top">
+                        <%- include('emailHeader')%>
+                        <table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                            <tr>
+                                <td class="hero-subheader__title" width="100%" style="font-size: 32px; font-weight: bold; padding: 15px 0; font-family: 'Comfortaa'" align="left">
+                                    <% if (tr === "en") { %>
+                                        Confirm your new address!
+                                    <% } else if (tr === "de"){ %>
+                                            Bestätigen Sie Ihre neue Adresse!
+                                    <% } else if (tr === "it"){ %>
+                                            Conferma il tuo nuovo indirizzo!
+                                    <% } else if (tr === "es"){ %>
+                                            ¡Confirma tu nueva dirección!
+                                    <% } else if (tr === "pt"){ %>
+                                            Confirme seu novo endereço!
+                                    <% } else { %>
+                                            Confirmer votre nouvelle adresse !
+                                    <% } %>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #8F8F8F; padding-bottom: 16px; font-family: 'Comfortaa', sans-serif" align="left">
+                                <% if (tr === "en") { %>
+                                        Hello !
+                                        <br/>
+                                        <br/>
+                                        You have just changed your email address via your My Pets Life profile.
+                                        <br/>
+                                        We therefore need you to confirm this new email address to verify that it is indeed you!
+                                        <br/>
+                                        <br/>
+                                        By clicking on the button below, you will be able to take advantage of all our features again.
+                                <% } else if (tr === "de"){ %>
+                                        Hallo !
+                                        <br/>
+                                        <br/>
+                                        Sie haben gerade Ihre E-Mail-Adresse über Ihr My Pets Life-Profil geändert.
+                                        <br/>
+                                        Sie müssen daher diese neue E-Mail-Adresse bestätigen, um zu überprüfen, ob Sie es tatsächlich sind!
+                                        <br/>
+                                        <br/>
+                                        Wenn Sie auf die Schaltfläche unten klicken, können Sie alle unsere Funktionen wieder nutzen.
+                                <% } else if (tr === "it"){ %>
+                                        Ciao !
+                                        <br/>
+                                        <br/>
+                                        Hai appena cambiato il tuo indirizzo e-mail tramite il tuo profilo My Pets Life.
+                                        <br/>
+                                        Abbiamo quindi bisogno che tu confermi questo nuovo indirizzo email per verificare che sei davvero tu!
+                                        <br/>
+                                        <br/>
+                                        Cliccando sul pulsante qui sotto potrai usufruire di nuovo di tutte le nostre funzionalità.
+                                <% } else if (tr === "es"){ %>
+                                        Hola !
+                                        <br/>
+                                        <br/>
+                                        Acaba de cambiar su dirección de correo electrónico a través de su perfil de My Pets Life.
+                                        <br/>
+                                        Por lo tanto, necesitamos que confirme esta nueva dirección de correo electrónico para verificar que efectivamente es usted.
+                                        <br/>
+                                        <br/>
+                                        Al hacer clic en el botón de abajo, podrá volver a aprovechar todas nuestras funciones.
+                                <% } else if (tr === "pt"){ %>
+                                        Olá !
+                                        <br/>
+                                        <br/>
+                                        Você acabou de alterar o seu endereço de e-mail através do perfil do My Pets Life.
+                                        <br/>
+                                        Portanto, precisamos que você confirme este novo endereço de e-mail para verificar se é você mesmo!
+                                        <br/>
+                                        <br/>
+                                        Ao clicar no botão abaixo, você poderá aproveitar novamente todos os nossos recursos.
+                                <% } else { %>
+                                        Bonjour !
+                                        <br/>
+                                        <br/>
+                                        Vous venez de changer votre adresse mail via votre profil My Pets Life.
+                                        <br/>
+                                        Nous avons donc besoin que vous confirmiez cette nouvelle addresse mail pour vérfier qu'il s'agit bien de vous !
+                                        <br/>
+                                        <br/>
+                                        En cliquant sur le bouton-ci dessous, vous pourrez profiter à nouveau de toutes nos fonctionnalités.
+                                <% } %>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container paragraph-block" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                                        <td class="cta-block__button" width="230" align="center" style="width: 200px;">
+                                            <a href="<%= confirmUrl %>" style="border: 2px solid #13E2BA; color: #13E2BA; text-decoration: none; padding: 15px; text-transform: uppercase; display: block; text-align: center; font-size: 16px; font-weight: bold;border-radius: 5px">
+                                                <% if (tr === "en") { %>
+                                                    Confirm my new email
+                                                <% } else if (tr === "de"){ %>
+                                                        Bestätige meine neue E-Mail
+                                                <% } else if (tr === "it"){ %>
+                                                        Conferma la mia nuova email
+                                                <% } else if (tr === "es"){ %>
+                                                        Confirmar mi nuevo correo electrónico
+                                                <% } else if (tr === "pt"){ %>
+                                                        Confirme meu novo email
+                                                <% } else { %>
+                                                        Confirmer mon nouveau mail
+                                                <% } %>
+                                            </a>
+                                        </td>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-top: 25px;" align="center">
+                            <tr>
+                                <td align="center">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="border-bottom: solid 1px #eeeeee; width: 620px;">
+                                        <tr>
+                                            <td align="center">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <%- include('emailFooter') %>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+

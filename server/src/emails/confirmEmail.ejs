@@ -1,0 +1,140 @@
+<%- include('emailStylesheet')%>
+
+<body style="padding: 0; margin: 0;" bgcolor="#eeeeee">
+
+<table class="full-width-container" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="#eeeeee" style="width: 100%; height: 100%; padding: 30px 0 30px 0;">
+    <tr>
+        <td align="center" valign="top">
+            <table class="container" border="0" cellpadding="0" cellspacing="0" width="700" bgcolor="#ffffff" style="width: 700px;">
+                <tr>
+                    <td align="center" valign="top">
+                        <%- include('emailHeader')%>
+                        <table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                            <tr>
+                                <td class="hero-subheader__title" width="100%" style="font-size: 32px; font-weight: bold; padding: 15px 0; font-family: 'Comfortaa'" align="left">
+                                    <% if (tr === "en") { %>
+                                            Confirm your MyPetsLife account!
+                                    <% } else if (tr === "de"){ %>
+                                            Bestätigen Sie Ihr MyPetsLife-Konto!
+                                    <% } else if (tr === "it"){ %>
+                                            Conferma il tuo account MyPetsLife!
+                                    <% } else if (tr === "es"){ %>
+                                            ¡Confirma tu cuenta MyPetsLife!
+                                    <% } else if (tr === "pt"){ %>
+                                            Confirme sua conta MyPetsLife!
+                                    <% } else { %>
+                                            Confirmer votre compte MyPetsLife !
+                                    <% } %>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #8F8F8F; padding-bottom: 16px; font-family: 'Comfortaa', sans-serif" align="left">
+                                <% if (tr === "en") { %>
+                                        Hello <%= pseudo %>
+                                        <br/>
+                                        <br/>
+                                        Welcome to the MyPetsFamily!
+                                        <br/>
+                                        We are Lucie, Audrey, Guillaume and Thibaud! We are the founders of MyPetsLife and we are very happy to have you here!
+                                        <br/>
+                                        <br/>
+                                        To be able to enjoy and discover all our features, you must confirm your email by clicking on the button below.
+                                <% } else if (tr === "de"){ %>
+                                        Hallo <%= pseudo %>
+                                        <br/>
+                                        <br/>
+                                        Willkommen in der MyPetsFamily!
+                                        <br/>
+                                        Wir sind Lucie, Audrey, Guillaume und Thibaud! Wir sind die Gründer von MyPetsLife und freuen uns sehr, Sie hier zu haben!
+                                        <br/>
+                                        <br/>
+                                        Um alle unsere Funktionen nutzen und entdecken zu können, müssen Sie Ihre E-Mail-Adresse bestätigen, indem Sie auf die Schaltfläche unten klicken.
+                                <% } else if (tr === "it"){ %>
+                                        Ciao <%= pseudo %>
+                                        <br/>
+                                        <br/>
+                                        Benvenuto in MyPetsFamily!
+                                        <br/>
+                                        Siamo Lucie, Audrey, Guillaume e Thibaud! Siamo i fondatori di MyPetsLife e siamo molto felici di averti qui!
+                                        <br/>
+                                        <br/>
+                                        Per poter usufruire e scoprire tutte le nostre funzionalità, devi confermare la tua email cliccando sul pulsante sottostante.
+                                <% } else if (tr === "es"){ %>
+                                        Hola, <%= pseudo%>
+                                        <br/>
+                                        <br/>
+                                        ¡Bienvenido a MyPetsFamily!
+                                        <br/>
+                                        ¡Somos Lucie, Audrey, Guillaume y Thibaud! ¡Somos los fundadores de MyPetsLife y estamos muy felices de tenerte aquí!
+                                        <br/>
+                                        <br/>
+                                        Para poder disfrutar y descubrir todas nuestras funcionalidades, debe confirmar su correo electrónico haciendo clic en el botón de abajo.
+                                <% } else if (tr === "pt"){ %>
+                                        Olá <%= pseudo%>
+                                        <br/>
+                                        <br/>
+                                        Bem-vindo ao MyPetsFamily!
+                                        <br/>
+                                        Somos Lucie, Audrey, Guillaume e Thibaud! Somos os fundadores do MyPetsLife e estamos muito felizes por ter você aqui!
+                                        <br/>
+                                        <br/>
+                                        Para poder desfrutar e descobrir todas as nossas funcionalidades, deve confirmar o seu email clicando no botão abaixo.
+                                <% } else { %>
+                                        Hello <%= pseudo %>
+                                        <br/>
+                                        <br/>
+                                        Bienvenue dans la MyPetsFamily !
+                                        <br/>
+                                        Nous c’est Lucie, Audrey, Guillaume et Thibaud ! Nous sommes les fondateurs de MyPetsLife et nous sommes très heureux de vous avoir parmi nous !
+                                        <br/>
+                                        <br/>
+                                        Pour pouvoir profiter et découvrir toutes nos fonctionnalités, vous devez confirmer votre mail en cliquant sur le bouton ci dessous.
+                                <% } %>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container paragraph-block" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                                        <td class="cta-block__button" width="230" align="center" style="width: 200px;">
+                                            <a href="<%= confirmUrl %>" style="border: 2px solid #13E2BA; color: #13E2BA; text-decoration: none; padding: 15px; text-transform: uppercase; display: block; text-align: center; font-size: 16px; font-weight: bold;border-radius: 5px">
+                                                <% if (tr === "en") { %>
+                                                        Confirm my email
+                                                <% } else if (tr === "de"){ %>
+                                                        Bestätige meine E-Mail
+                                                <% } else if (tr === "it"){ %>
+                                                        Conferma la mia email
+                                                <% } else if (tr === "es"){ %>
+                                                        Confirmar mi correo electrónico
+                                                <% } else if (tr === "pt"){ %>
+                                                        Confirme meu email
+                                                <% } else { %>
+                                                        Confirmer mon email
+                                                <% } %>
+                                            </a>
+                                        </td>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-top: 25px;" align="center">
+                            <tr>
+                                <td align="center">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="border-bottom: solid 1px #eeeeee; width: 620px;">
+                                        <tr>
+                                            <td align="center">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <%- include('emailFooter') %>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+

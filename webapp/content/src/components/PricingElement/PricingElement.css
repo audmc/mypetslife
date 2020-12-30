@@ -1,0 +1,89 @@
+.pricing-card {
+    width: 18vw;
+    margin: 0 1rem;
+    border-radius: 25px;
+    background-color: #fafafa;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.pricing-discount {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    color: #ffffff;
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+    background-color: #ED1944;
+    border-radius: 100%;
+}
+
+.pricing-title-section {
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+    padding: 1rem;
+}
+
+.pricing-title {
+    font-family: Comfortaa, sans-serif;
+    margin: 0;
+}
+
+.pricing-icon {
+    width: 1.5rem;
+}
+
+.pricing-content {
+    padding-bottom: 1rem;
+}
+
+.pricing-price {
+    font-family: Montserrat, sans-serif;
+    color: #13E2BA;
+    text-align: center;
+    margin: 1rem 4rem;
+    line-height: 3rem;
+    border-radius: 2rem;
+    background-color: rgba(19, 226, 186, 0.2);
+    transition: all .2s ease-in-out;
+}
+
+.pricing-content-table {
+    text-align: left;
+}
+
+.pricing-content-table td {
+    font-family: Montserrat, sans-serif;
+    font-size: .8rem;
+    margin: 0.5rem;
+}
+
+.pricing-subscription {
+    color: #333333;
+    background-color: rgba(51, 51, 51, 0.15);
+    line-height: 3rem;
+    margin: 0 25%;
+    border-radius: 1.5rem;
+    transition: all .2s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    .pricing-card {
+        margin: auto;
+        width: 80vw !important;
+        min-width: 0;
+        max-width: 350px;
+    }
+
+    .welcome-pricing-container .fp-tableCell {
+        height: 100% !important;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .pricing-card {
+        margin-top: -1.5rem;
+    }
+}

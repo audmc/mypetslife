@@ -1,0 +1,128 @@
+<%- include('emailStylesheet')%>
+
+<body style="padding: 0; margin: 0;" bgcolor="#eeeeee">
+
+<table class="full-width-container" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="#eeeeee" style="width: 100%; height: 100%; padding: 30px 0 30px 0;">
+    <tr>
+        <td align="center" valign="top">
+            <table class="container" border="0" cellpadding="0" cellspacing="0" width="700" bgcolor="#ffffff" style="width: 700px;">
+                <tr>
+                    <td align="center" valign="top">
+                        <%- include('emailHeader')%>
+                        <table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                            <tr>
+                                <td class="hero-subheader__title" width="100%" style="font-size: 32px; font-weight: bold; padding: 15px 0; font-family: 'Comfortaa'" align="left">
+                                    <% if (tr === "en") { %>
+                                        Study of your file
+                                    <% } else if (tr === "de"){ %>
+                                        Studium Ihrer Akte
+                                    <% } else if (tr === "it"){ %>
+                                        Studio del tuo file
+                                    <% } else if (tr === "es"){ %>
+                                        Estudio de su expediente
+                                    <% } else if (tr === "pt"){ %>
+                                        Estudo do seu arquivo
+                                    <% } else { %>
+                                        Étude de votre dossier
+                                    <% } %>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #8F8F8F; padding-bottom: 16px; font-family: 'Comfortaa', sans-serif" align="left">
+                                <% if (tr === "en") { %>
+                                        Hello !
+                                        <br/>
+                                        <br/>
+                                        Your adoption file for <%= petName%> has just been put on hold. You will be contacted as soon as the association has finished studying your file.
+                                        <br/>
+                                        <br/>
+                                        In the meantime, make yourself available and don't forget to check your emails and MyPetsLife messaging regularly.
+                                <% } else if (tr === "de"){ %>
+                                        Hallo !
+                                        <br/>
+                                        <br/>
+                                        Ihre Adoptionsdatei für <%= petName%> wurde gerade zurückgestellt. Sie werden kontaktiert, sobald der Verein Ihre Akte studiert hat.
+                                        <br/>
+                                        <br/>
+                                        Stellen Sie sich in der Zwischenzeit zur Verfügung und vergessen Sie nicht, Ihre E-Mails und MyPetsLife-Nachrichten regelmäßig zu überprüfen.
+                                <% } else if (tr === "it"){ %>
+                                        Buongiorno !
+                                        <br/>
+                                        <br/>
+                                        Il tuo file di adozione per <%= petName%> è stato appena messo in attesa. Sarai contattato non appena l'associazione avrà terminato lo studio della tua pratica.
+                                        <br/>
+                                        <br/>
+                                        Nel frattempo, renditi disponibile e non dimenticare di controllare regolarmente le tue e-mail e i messaggi di MyPetsLife.
+                                <% } else if (tr === "es"){ %>
+                                        Buenos dias !
+                                        <br/>
+                                        <br/>
+                                        Su archivo de adopción para <%= petName%> acaba de quedar en espera. Serás contactado tan pronto como la asociación haya terminado de estudiar tu expediente.
+                                        <br/>
+                                        <br/>
+                                        Mientras tanto, esté disponible y no olvide revisar sus correos electrónicos y mensajes de MyPetsLife con regularidad.
+                                <% } else if (tr === "pt"){ %>
+                                        Olá !
+                                        <br/>
+                                        <br/>
+                                        Seu arquivo de adoção para <%= petName%> acaba de ser colocado em espera. Você será contatado assim que a associação terminar de estudar seu arquivo.
+                                        <br/>
+                                        <br/>
+                                        Enquanto isso, fique à disposição e não se esqueça de verificar seus e-mails e mensagens do MyPetsLife regularmente.
+                                <% } else { %>
+                                        Bonjour !
+                                        <br/>
+                                        <br/>
+                                        Votre dossier d'adoption concernant <%= petName%> vient d'être mis en attente. Vous serez contacté dès que l'association aura terminé d'étudier votre dossier.
+                                        <br/>
+                                        <br/>
+                                        En attendant, rendez vous disponible et n'oubliez pas de consulter régulièrement vos mails et votre messagerie MyPetsLife.
+                                <% } %>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container paragraph-block" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                                        <td class="cta-block__button" width="230" align="center" style="width: 200px;">
+                                            <a href="mypetslife.co/conversations" style="border: 2px solid #13E2BA; color: #13E2BA; text-decoration: none; padding: 15px; text-transform: uppercase; display: block; text-align: center; font-size: 16px; font-weight: bold;border-radius: 5px">
+                                                <% if (tr === "en") { %>
+                                                        CONVERSATIONS
+                                                <% } else if (tr === "de"){ %>
+                                                        NACHRICHT
+                                                <% } else if (tr === "it"){ %>
+                                                        MESSAGGISTICA
+                                                <% } else if (tr === "es"){ %>
+                                                        MENSAJERÍA
+                                                <% } else if (tr === "pt"){ %>
+                                                        MENSAGENS
+                                                <% } else { %>
+                                                        MESSAGERIE
+                                                <% } %>
+                                            </a>
+                                        </td>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-top: 25px;" align="center">
+                            <tr>
+                                <td align="center">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="border-bottom: solid 1px #eeeeee; width: 620px;">
+                                        <tr>
+                                            <td align="center">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <%- include('emailFooter') %>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+

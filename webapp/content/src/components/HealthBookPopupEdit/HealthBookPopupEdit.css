@@ -1,0 +1,274 @@
+.healthbook-popup-edit-title {
+    font-size: 2.2em;
+}
+
+.healthbook-popup-edit-subtitle {
+    font-size: 1.5em;
+    border-bottom: 2px solid #ED1944;
+    padding-left: .75em;
+    padding-right: .75em;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.healthbook-popup-edit  {
+    width: 100%;
+    height: inherit;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.healthbook-popup-edit-input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 7px 17px -4px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 7px 17px -4px rgba(0,0,0,0.32);
+    box-shadow: 0px 7px 17px -4px rgba(0,0,0,0.32);
+    border-radius: 15px;
+    min-height: 35px;
+}
+
+.healthbook-popup-edit-input-select {
+    padding-right: 10px;
+}
+
+.healthbook-popup-body {
+    padding: 0 2px;
+}
+
+/* error message */
+
+.healthbook-popup-edit-alert {
+    color: #ED1944;
+    font-size: .75em;
+    margin-top: -0.25em;
+    margin-left: 60px;
+}
+
+/* input icon */
+
+.healthbook-popup-edit-icon {
+    padding: 8px 10px 0 10px;
+    color: #ED1944;
+    min-width: 50px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* inputs */
+
+.healthbook-popup-edit-input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #474747;
+    background-color: transparent;
+    border-radius: 15px;
+    font-size: 1em;
+    height: 100%;
+}
+
+.healthbook-popup-edit-input-field:focus {
+    -webkit-box-shadow: inset 0px 7px 17px -4px rgba(0,0,0,0.22);
+    -moz-box-shadow: inset 0px 7px 17px -4px rgba(0,0,0,0.22);
+    box-shadow: inset 0px 7px 17px -4px rgba(0,0,0,0.22);
+}
+
+/* Form button */
+
+.healthbook-popup-edit-btn {
+    font-size: 1.7em;
+    margin-top: 20px;
+}
+
+.healthbook-popup-edit-btn:hover {
+    background-color: #ea3b61;
+}
+
+.healthbook-popup-edit-btn:active {
+    background-color: #9e132d;
+}
+
+/* Status icon and text */
+
+.healthbook-popup-status-icon {
+    text-align: center;
+    font-size: 12em;
+    color: #ED1944;
+}
+
+.healthbook-popup-status-text {
+    font-family: Comfortaa, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: #242424;
+}
+
+/* Styling for the DayPicker */
+
+.healthbook-popup-edit-input-container .DayPicker {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.healthbook-popup-edit-input-container .DayPickerInput {
+    width: 100%;
+}
+
+.healthbook-popup-edit-input-container .DayPickerInput input {
+    background-color: unset;
+    margin-bottom: unset;
+    line-height: unset;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #474747;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.healthbook-popup-edit-input-container .DayPickerInput input:focus {
+    -webkit-box-shadow: inset 0px 7px 17px -4px rgba(0,0,0,0.22);
+    -moz-box-shadow: inset 0px 7px 17px -4px rgba(0,0,0,0.22);
+    box-shadow: inset 0px 7px 17px -4px rgba(0,0,0,0.22);
+}
+
+/* Styling for google places location */
+
+.healthbook-popup-edit-input-container .search-location-input {
+    width: 100%;
+}
+
+.healthbook-popup-edit-input-container .search-location-input input {
+    background-color: unset;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    color: #474747;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+}
+
+.healthbook-popup-edit-input-container .search-location-input input:focus{
+    -webkit-box-shadow: inset 0px 7px 17px -4px rgba(0,0,0,0.22);
+    -moz-box-shadow: inset 0px 7px 17px -4px rgba(0,0,0,0.22);
+    box-shadow: inset 0px 7px 17px -4px rgba(0,0,0,0.22);
+}
+
+/* Google Location dropdown styling */
+
+.pac-container {
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.02);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.02);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.02);
+    background-color: #ffffff;
+    border-radius: 0 0 8px 8px;
+    z-index: 1500;
+}
+
+.pac-container:after {
+    background-image: none !important;
+    height: 0;
+}
+
+.pac-matched {
+    color: #ED1944;
+}
+
+.pac-item-query {
+    color: #474747;
+}
+
+.pac-item {
+    color: #585858;
+}
+
+.pac-item:hover {
+    background-color: #e3acb8;
+}
+
+@media (max-width: 992px) {
+    .popup-container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .popup-container {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    .healthbook-popup-edit-title {
+        font-size: 1.8em;
+    }
+
+    .healthbook-popup-edit-subtitle {
+        font-size: 1.1em;
+    }
+
+    .healthbook-popup-edit  {
+        width: calc(100vw - 2em);
+        padding: 1vw;
+    }
+
+    .healthbook-popup-body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 50vh;
+    }
+
+    .healthbook-popup-edit-btn {
+        margin-top: 10px;
+        font-size: 1.5em;
+        padding: .2em 1em;
+        background-color: #ED1944;
+        border-radius: 1em;
+    }
+
+    .DayPicker {
+        display: inline-block;
+        font-size: 1.2em;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .healthbook-popup-edit-title {
+        font-size: 1.7em;
+    }
+
+    .healthbook-popup-edit-subtitle {
+        font-size: 1.2em;
+    }
+
+    .healthbook-popup-edit  {
+        width: calc(100vw - 2em);
+        padding: 1vw;
+    }
+
+    .healthbook-popup-body {
+        height: 50vh;
+    }
+
+    .healthbook-popup-edit-btn {
+        margin-top: 10px;
+        font-size: 1.3em;
+        padding: .2em 1em;
+        background-color: #ED1944;
+        border-radius: 1em;
+    }
+
+    .DayPicker {
+        display: inline-block;
+        font-size: 1.2em;
+    }
+
+}

@@ -1,0 +1,138 @@
+.popup-contact {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.popup-contact .input-mpl {
+    color: #585858;
+}
+
+.popup-contact-header {
+    width: 60%;
+}
+
+.popup-contact-body {
+    padding: 0 2px;
+}
+
+.popup-contact-subtitle {
+    color: #8F8F8F;
+    border-left: 2px solid #ED1944;
+    padding-left: .75rem;
+}
+
+.popup-alert-mail-error {
+    color: #ED1944;
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(237, 25, 68, 0.1);
+    margin: 0;
+}
+
+.popup-contact-illustration {
+    position: absolute;
+    top: 1rem;
+    right: 11%;
+    z-index: 0;
+    height: 100px;
+}
+
+.popup-contact-alert {
+    color: #ED1944;
+    font-size: .75rem;
+    margin-top: -0.25rem;
+}
+
+.popup-contact textarea {
+    resize: none;
+}
+
+#mail-error-format {
+    display: none;
+}
+
+#phone-alert {
+    opacity: 0;
+}
+
+.mail-send-container {
+    text-align: center;
+}
+
+.mail-send-title {
+    font-size: 1.5rem;
+    font-family: Comfortaa, sans-serif;
+    color: #13e2ba;
+    margin: 1.5rem auto 0 auto;
+    width: 50%;
+}
+
+.mail-send-illustration{
+    height: fit-content;
+}
+
+.mail-send-illustration svg {
+    width: 50%;
+    padding: 3rem 0;
+}
+
+/* Hide arrow for number type input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media (max-width: 1440px) {
+    .mail-send-illustration svg {
+        width: 33%;
+    }
+}
+
+
+@media (max-width: 998px) {
+    .mail-send-title {
+        font-size: 1.25rem;
+        width: 80%;
+    }
+
+    .mail-send-illustration svg {
+        width: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    .popup-contact-body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 60vh;
+    }
+
+    .popup-contact {
+        padding: 1.5rem .5rem;
+    }
+
+    .mail-send-title {
+        font-size: 1rem;
+    }
+
+    .mail-send-illustration svg {
+        width: 75%;
+    }
+
+    .popup-contact-illustration {
+        display: none;
+    }
+
+    .popup-contact-header {
+        width: 100%;
+    }
+}

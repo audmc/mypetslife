@@ -1,0 +1,30 @@
+.profile-bank-history-element {
+    border-top: 1px solid #E5E5E6;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.profile-bank-history-element-date {
+    width: 50%;
+}
+
+.profile-bank-history-price {
+    color: #ED1944;
+    text-align: right;
+    width: 50%;
+}
+
+.profile-bank-history-description {
+    font-weight: normal;
+    display: flex;
+    margin: 0;
+}
+
+.profile-bank-history-shape{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    border-top: 1px solid #ED1944;
+    border-right: 1px solid #ED1944;
+}

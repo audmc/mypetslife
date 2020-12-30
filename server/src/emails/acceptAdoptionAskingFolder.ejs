@@ -1,0 +1,146 @@
+<%- include('emailStylesheet')%>
+
+<body style="padding: 0; margin: 0;" bgcolor="#eeeeee">
+
+<table class="full-width-container" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="#eeeeee" style="width: 100%; height: 100%; padding: 30px 0 30px 0;">
+    <tr>
+        <td align="center" valign="top">
+            <table class="container" border="0" cellpadding="0" cellspacing="0" width="700" bgcolor="#ffffff" style="width: 700px;">
+                <tr>
+                    <td align="center" valign="top">
+                        <%- include('emailHeader')%>
+                        <table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                            <tr>
+                                <td class="hero-subheader__title" width="100%" style="font-size: 32px; font-weight: bold; padding: 15px 0; font-family: 'Comfortaa'" align="left">
+                                    <% if (tr === "en") { %>
+                                        Study of your file
+                                    <% } else if (tr === "de"){ %>
+                                            Studium Ihrer Akte
+                                    <% } else if (tr === "it"){ %>
+                                            Studio del tuo file
+                                    <% } else if (tr === "es"){ %>
+                                            Estudio de su expediente
+                                    <% } else if (tr === "pt"){ %>
+                                            Estudo do seu arquivo
+                                    <% } else { %>
+                                            Étude de votre dossier
+                                    <% } %>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #8F8F8F; padding-bottom: 16px; font-family: 'Comfortaa', sans-serif" align="left">
+                                <% if (tr === "en") { %>
+                                        Hello,
+                                        <br/>
+                                        <br/>
+                                        Your adoption file for <%= petName%> has just been accepted!
+                                        <br/>
+                                        <br/>
+                                        You can now communicate with the association via your MyPetsLife messaging to continue the adoption process.
+                                        <br/>
+                                        <br/>
+                                        In the meantime, do not hesitate to consult our blog to prepare the arrival of your little protégé.
+                                <% } else if (tr === "de"){ %>
+                                        Hallo,
+                                        <br/>
+                                        <br/>
+                                        Ihre Adoptionsdatei für <%= petName%> wurde gerade akzeptiert!
+                                        <br/>
+                                        <br/>
+                                        Sie können jetzt über Ihre MyPetsLife-Nachrichten mit der Zuordnung kommunizieren, um den Adoptionsprozess fortzusetzen.
+                                        <br/>
+                                        <br/>
+                                        Zögern Sie in der Zwischenzeit nicht, unseren Blog zu konsultieren, um die Ankunft Ihres kleinen Schützlings vorzubereiten.
+                                <% } else if (tr === "it"){ %>
+                                        Buongiorno,
+                                        <br/>
+                                        <br/>
+                                        Il tuo file di adozione per <%= petName%> è stato appena accettato!
+                                        <br/>
+                                        <br/>
+                                        Ora puoi parlare con l'associazione tramite il tuo sistema di messaggistica MyPetsLife per continuare il processo di adozione.
+                                        <br/>
+                                        <br/>
+                                        Nel frattempo, non esitate a consultare il nostro blog per preparare l'arrivo del vostro piccolo protetto.
+                                <% } else if (tr === "es"){ %>
+                                        Buenos dias,
+                                        <br/>
+                                        <br/>
+                                        ¡Su archivo de adopción para <%= petName%> acaba de ser aceptado!
+                                        <br/>
+                                        <br/>
+                                        Ahora puede comunicarse con la asociación a través de su mensaje de MyPetsLife para continuar con el proceso de adopción.
+                                        <br/>
+                                        <br/>
+                                        Mientras tanto, no dudes en consultar nuestro blog para preparar la llegada de tu pequeño protegido.
+                                <% } else if (tr === "pt"){ %>
+                                        Olá,
+                                        <br/>
+                                        <br/>
+                                        Seu arquivo de adoção para <%= petName%> acaba de ser aceito!
+                                        <br/>
+                                        <br/>
+                                        Agora você pode falar com a associação através do seu sistema de mensagens MyPetsLife para continuar o processo de adoção.
+                                        <br/>
+                                        <br/>
+                                        Entretanto, não hesite em consultar o nosso blogue para preparar a chegada do seu pequeno protegido.
+                                <% } else { %>
+                                        Bonjour,
+                                        <br/>
+                                        <br/>
+                                        Votre dossier d'adoption concernant <%= petName %> vient d'être accepté !
+                                        <br/>
+                                        <br/>
+                                        Vous pouvez dès maintenant échanger avec l'association via votre messagerie MyPetsLife pour poursuivre le processus d'adoption.
+                                        <br/>
+                                        <br/>
+                                        En attendant, n'hésitez pas à consulter notre blog pour préparer l'arrivé de votre petit protégé.
+                                <% } %>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container paragraph-block" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                                        <td class="cta-block__button" width="230" align="center" style="width: 200px;">
+                                            <a href="mypetslife.co/conversations" style="border: 2px solid #13E2BA; color: #13E2BA; text-decoration: none; padding: 15px; text-transform: uppercase; display: block; text-align: center; font-size: 16px; font-weight: bold;border-radius: 5px">
+                                                <% if (tr === "en") { %>
+                                                    CONVERSATIONS
+                                                <% } else if (tr === "de"){ %>
+                                                    NACHRICHT
+                                                <% } else if (tr === "it"){ %>
+                                                    MESSAGGISTICA
+                                                <% } else if (tr === "es"){ %>
+                                                    MENSAJERÍA
+                                                <% } else if (tr === "pt"){ %>
+                                                    MENSAGENS
+                                                <% } else { %>
+                                                    MESSAGERIE
+                                                <% } %>
+                                            </a>
+                                        </td>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-top: 25px;" align="center">
+                            <tr>
+                                <td align="center">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="border-bottom: solid 1px #eeeeee; width: 620px;">
+                                        <tr>
+                                            <td align="center">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <%- include('emailFooter') %>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+

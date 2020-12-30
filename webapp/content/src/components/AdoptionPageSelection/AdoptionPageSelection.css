@@ -1,0 +1,57 @@
+.button-page-selector {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    cursor: pointer;
+    font-family: Comfortaa, sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #13E2BA !important;
+    z-index: 1 !important;
+    bottom: 60%;
+}
+
+.button-chevron-left-container {
+    left: 22%;
+}
+
+.button-one-container {
+    left: 28%;
+}
+
+.button-two-container {
+    left: 34%;
+    font-size: 1.9rem;
+    bottom: 70%;
+}
+
+.button-tree-container {
+    left: 40%;
+}
+
+.button-chevron-right-container {
+    left: 46%;
+}
+
+@media (max-width: 992px) {
+    .button-chevron-left-container {
+        left: 25%;
+    }
+
+    .button-one-container {
+        left: 38%;
+    }
+
+    .button-two-container {
+        left: 50%;
+    }
+
+    .button-tree-container {
+        left: 62%;
+    }
+
+    .button-chevron-right-container {
+        left: 74%;
+    }
+}
+

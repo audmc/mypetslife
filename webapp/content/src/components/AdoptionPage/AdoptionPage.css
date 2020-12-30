@@ -1,0 +1,404 @@
+:root {
+    --AdoptionLogoSize: 40%;
+}
+
+body {
+    background-color: #F9F9FA;
+}
+
+.adoption-bg {
+    background: url("../../svg/adoption-background.svg") center top no-repeat;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.pet-page-container {
+    z-index: 1;
+    width: 1500px;
+    position: sticky;
+    left: 15%;
+    margin-bottom: 2%;
+}
+
+.navbar-bottom-page {
+    width: 650px;
+    height: 50px;
+    top: 100%;
+    position: absolute;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-sizing: border-box;
+    border-top-color: black;
+    z-index: 0 !important;
+    left: 25%;
+}
+
+.pet-col {
+    padding: 0;
+    z-index: 5;
+    display: inline-block;
+    align-items: center;
+}
+
+.welcome-adoption-pic-container {
+    max-width: var(--AdoptionLogoSize);
+    bottom: 40%;
+    left: 10px;
+    position: absolute;
+}
+
+.text-adoption-container {
+    width: 500px;
+    height: 100px;
+    left: 30%;
+    position: absolute;
+    top: 17%;
+}
+
+.text-description-adoption-container {
+    width: 800px;
+    height: 100px;
+    left: 30%;
+    top: 23%;
+    position: absolute;
+}
+
+.search-bar-container {
+    width: 650px;
+    height: 35px;
+    bottom: 90%;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 1, .15) !important;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-color: black;
+}
+
+.button-search-container {
+    width: 140px;
+    height: 30px;
+    margin: auto;
+    top: 350%;
+    left: 78%;
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 1, .15) !important;
+}
+
+.button-text-bar {
+    cursor: pointer;
+    padding: 0.2rem 0 0 1.6rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: white !important;
+}
+
+.text-bar {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: black;
+}
+
+.search-b-bar {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+.search-bar {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: #13E2BA;
+}
+
+@media (max-width: 1800px) {
+    .pet-page-container {
+        width: 1200px;
+        margin-top: 15%;
+        left: 15%;
+    }
+
+    .text-adoption-container {
+        font-size: 2rem;
+        top: 15%;
+        left: 35%;
+    }
+
+    .text-description-adoption-container {
+        font-size: 1.5rem;
+        top: 25%;
+        left: 35%;
+    }
+
+    .welcome-adoption-pic-container {
+        top: 15%;
+    }
+}
+
+@media (max-width: 1024px ) {
+    .pet-page-container {
+        width: 800px;
+        margin-top: 45%;
+        margin-bottom: 10%;
+    }
+
+    .navbar-bottom-page {
+        left: 25%;
+    }
+
+    .text-adoption-container {
+        top: 10%;
+        left: 40%;
+
+    }
+
+    .text-description-adoption-container {
+        top: 15%;
+        left: 40%;
+        width: 500px;
+    }
+
+    .welcome-adoption-pic-container {
+        top: 8%;
+    }
+}
+
+
+@media (max-width: 823px) {
+    .search-bar-container {
+        width: 300px;
+    }
+
+    .pet-page-container {
+        margin-bottom: 100px;
+        width: 520px;
+        left: 0;
+        right: 20%;
+        margin-top: 85%;
+    }
+
+    .navbar-bottom-page {
+        width: 250px;
+    }
+
+    .text-adoption-container {
+        top: 20%;
+        left: 25%;
+        font-size: 1.6rem;
+    }
+
+    .text-description-adoption-container {
+        top: 40%;
+        left: 25%;
+        font-size: 0.9rem;
+    }
+
+    .button-search-container {
+        left: 32%;
+    }
+
+    .welcome-adoption-pic-container {
+        width: 0;
+        height: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .pet-page-container {
+        width: 620px;
+        right: 0;
+        left: 15%;
+        margin-top: 45%;
+    }
+
+    .navbar-bottom-page {
+        width: 500px;
+        left: 15%;
+    }
+
+    .button-search-container {
+        top: 250%;
+        left: 30%;
+    }
+
+    .text-adoption-container {
+        top: 10%;
+        left: 25%;
+        font-size: 1.6rem;
+    }
+
+    .text-description-adoption-container {
+        width: 400px;
+        top: 15%;
+        left: 25%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 736px) {
+    .pet-page-container {
+        margin-top: 30%;
+        left: 8%;
+    }
+
+    .text-adoption-container {
+        width: 400px;
+        height: 100px;
+        top: 15%;
+        left: 25%;
+    }
+
+    .text-description-adoption-container {
+        width: 400px;
+        height: 100px;
+        padding: 0 1rem 0 0;
+        top: 25%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 670px) {
+    .search-bar-container {
+        width: 300px;
+    }
+
+    .pet-page-container {
+        width: 520px;
+        left: 5%;
+        top: 120%;
+    }
+
+    .navbar-bottom-page {
+        width: 250px;
+        left: 25%;
+    }
+
+    .text-adoption-container {
+        top: 20%;
+    }
+
+    .text-description-adoption-container {
+        top: 40%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 568px) {
+    .pet-page-container {
+        left: 0;
+        top: 175%;
+    }
+
+    .navbar-bottom-page {
+        left: 10%;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .pet-page-container {
+        width: 350px;
+        margin-top: 90%;
+        left: 9%;
+    }
+
+    .navbar-bottom-page {
+        width: 250px;
+    }
+
+    .text-adoption-container {
+        width: 500px;
+        height: 40px;
+        top: 10%;
+        left: 5%;
+        font-size: 1.5rem;
+    }
+
+    .text-description-adoption-container {
+        width: 500px;
+        top: 20%;
+        left: 5%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .pet-page-container {
+        margin-top: 110%;
+        left: 1%;
+    }
+
+    .text-adoption-container {
+        width: 300px;
+        height: 40px;
+        top: 10%;
+        left: 5%;
+        font-size: 1.5rem;
+    }
+
+    .text-description-adoption-container {
+        width: 300px;
+        top: 20%;
+        left: 5%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .pet-page-container {
+        margin-top: 120%;
+    }
+
+    .navbar-bottom-page {
+        width: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+    .pet-page-container {
+        width: 320px;
+        top: 100%;
+        left: 0;
+    }
+
+    .navbar-bottom-page {
+        width: 250px;
+    }
+
+    .text-adoption-container {
+        top: 10%;
+        left: 5%;
+        font-size: 1.5rem;
+    }
+
+    .text-description-adoption-container {
+        top: 25%;
+    }
+}
+
+@media (max-width: 280px) {
+    .search-bar-container {
+        width: 280px;
+    }
+
+    .navbar-bottom-page {
+        left: 10%;
+    }
+
+    .text-adoption-container {
+        width: 280px;
+        left: 0;
+    }
+    .text-description-adoption-container {
+        width: 280px;
+        height: 100px;
+        left: 0;
+    }
+}

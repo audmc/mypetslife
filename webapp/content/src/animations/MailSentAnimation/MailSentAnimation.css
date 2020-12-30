@@ -1,0 +1,149 @@
+#Head_Front {
+    animation: HeadHair 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#mail-background {
+    animation: mailBackground 1s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+#Envelope {
+    animation: Envelope 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#Forms {
+    animation: Forms 3s ease-in-out infinite alternate;
+    transform-origin: right;
+}
+
+@keyframes HeadHair {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(5deg) rotateZ(5deg);
+    }
+}
+
+@keyframes mailBackground {
+    from {
+        transform: scale(1) rotateX(0);
+    }
+    to {
+        transform: scale(1.01) rotateX(10deg);
+    }
+}
+
+@keyframes Envelope {
+    from {
+        transform: scale(1);
+        filter: grayscale(0%);
+    }
+    to {
+        transform: scale(1.05);
+        filter: grayscale(100%);
+    }
+}
+
+@keyframes Forms {
+    from {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(1, 2, 1, 2deg);
+    }
+}
+
+#mail-sent-animation .cls-1, #mail-sent-animation .cls-11 {
+    fill: #99beff;
+}
+
+#mail-sent-animation .cls-1, #mail-sent-animation .cls-2, #mail-sent-animation .cls-9 {
+    opacity: 0.2;
+    isolation: isolate;
+}
+
+#mail-sent-animation .cls-2 {
+    fill: #333;
+}
+
+#mail-sent-animation .cls-3 {
+    fill: #57331f;
+}
+
+#mail-sent-animation .cls-4 {
+    fill: #69a1ac;
+}
+
+#mail-sent-animation .cls-5 {
+    fill: #89c5cc;
+}
+
+#mail-sent-animation .cls-6 {
+    fill: #e4e4e4;
+}
+
+#mail-sent-animation .cls-7 {
+    fill: #191847;
+}
+
+#mail-sent-animation .cls-8 {
+    fill: #2f3676;
+}
+
+#mail-sent-animation .cls-9 {
+    fill: #6613e2;
+}
+
+#mail-sent-animation .cls-10 {
+    fill: #f58da1;
+}
+
+#mail-sent-animation .cls-12 {
+    fill: #c3f8ee;
+}
+
+#mail-sent-animation .cls-13 {
+    fill: #eebbec;
+}
+
+#mail-sent-animation .cls-14, #mail-sent-animation .cls-15, #mail-sent-animation .cls-16, #mail-sent-animation .cls-17, #mail-sent-animation .cls-18 {
+    fill: none;
+}
+
+#mail-sent-animation .cls-15 {
+    stroke: #f58da1;
+}
+
+#mail-sent-animation .cls-15, #mail-sent-animation .cls-16, #mail-sent-animation .cls-18 {
+    stroke-width: 6px;
+}
+
+#mail-sent-animation .cls-16 {
+    stroke: #13e2e2;
+}
+
+#mail-sent-animation .cls-17 {
+    stroke: #99beff;
+    stroke-width: 8px;
+}
+
+#mail-sent-animation .cls-18 {
+    stroke: #ec1d45;
+}
+
+#mail-sent-animation .cls-19 {
+    fill: url(#Dégradé_sans_nom);
+}
+
+#mail-sent-animation .cls-20 {
+    fill: #13e2ba;
+}
+
+#mail-sent-animation .cls-21 {
+    fill: #f5f5f5;
+}

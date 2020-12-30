@@ -1,0 +1,359 @@
+
+.pet-container {
+    width: 300px;
+    z-index: 2;
+    height: 470px;
+    background-color: white;
+    position: relative;
+    margin: 30px 30px 100px 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 .5rem 1rem 2px rgba(0, 0, 0, .15) !important;
+}
+
+.pet-click-container {
+    width: 300px;
+    height: 470px;
+    z-index: 2;
+}
+
+.pet-bar {
+    z-index: 2;
+    width: 300px;
+    height: 50px;
+    background-color: #FEDEDE;
+    position: absolute;
+    border-bottom-right-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    top: 95%;
+}
+
+.pet-text {
+    z-index: 2;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+.pic-pet-container {
+    z-index: 2;
+    width: 237px;
+    height: 237px;
+    position: absolute;
+    background-color: white;
+    left: 10%;
+    bottom: 62%;
+    border-radius: 10%;
+    box-shadow: 0 .5rem 1rem 2px rgba(0, 0, 0, .15) !important
+}
+
+.pic-click-container {
+    z-index: 1;
+    width: 237px;
+    height: 237px;
+    position: absolute;
+    left: 10%;
+    bottom: 62%;
+    border-radius: 10%;
+    background-color: black;
+}
+
+.i-eyes-container {
+    z-index: 1;
+    font-size: 1.9rem;
+    top: 6%;
+    left: 80%;
+    color: red;
+    position: absolute;
+}
+
+.i-heart-container {
+    z-index: 1;
+    font-size: 1.9rem;
+    top: 6%;
+    left: 10%;
+    color: red;
+    position: absolute;
+}
+
+.i-envelope-container {
+    z-index: 1;
+    font-size: 1.9rem;
+    top: 6%;
+    color: red;
+    left: 45%;
+    position: absolute;
+}
+
+.i-paw-container {
+    z-index: 1;
+    font-size: 1.2rem;
+    bottom: 450%;
+    color: #13E2BA;
+    left: 10%;
+    position: absolute;
+}
+
+.i-cake-container {
+    z-index: 1;
+    font-size: 1.2rem;
+    bottom: 350%;
+    color: #13E2BA;
+    left: 10%;
+    position: absolute;
+}
+
+.i-home-container {
+    z-index: 1;
+    font-size: 1.2rem;
+    bottom: 250%;
+    color: #13E2BA;
+    left: 9%;
+    position: absolute;
+}
+
+
+.i-loc-container {
+    z-index: 1;
+    font-size: 1.2rem;
+    bottom: 150%;
+    color: #13E2BA;
+    left: 10%;
+    position: absolute;
+}
+
+.i-gender-container {
+    z-index: 1;
+    font-size: 1.6rem;
+    bottom: 430%;
+    color: #13E2BA;
+    left: 80%;
+    position: absolute;
+}
+
+.name-pet-container {
+    z-index: 1;
+    font-size: 1rem;
+    width: 100px;
+    height: 30px;
+    bottom: 52%;
+    left: 40%;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: black;
+    position: absolute;
+}
+
+.des-pet-container {
+    z-index: 1;
+    width: 250px;
+    height: 100px;
+    bottom: 29%;
+    left: 10%;
+    font-size: 0.8rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: black;
+    position: absolute;
+}
+
+.age-pet-container {
+    width: 150px;
+    height: 10px;
+    bottom: 33%;
+    left: 20%;
+    font-size: 0.75rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: black;
+    position: absolute;
+    z-index: 1;
+}
+
+.home-pet-container {
+    width: 150px;
+    height: 10px;
+    bottom: 23%;
+    left: 20%;
+    font-size: 0.75rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: black;
+    position: absolute;
+    z-index: 1;
+}
+
+.race-pet-container {
+    width: 70px;
+    height: 10px;
+    bottom: 44%;
+    left: 20%;
+    font-size: 0.8rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: black;
+    position: absolute;
+    z-index: 1;
+}
+
+.loc-pet-container {
+    width: 140px;
+    height: 10px;
+    bottom: 12%;
+    left: 20%;
+    font-size: 0.8rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: black;
+    position: absolute;
+    z-index: 1;
+}
+
+@media (max-width: 1800px) {
+    .pet-container {
+        margin-bottom: 65px;
+        left: 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .pet-container {
+        margin-bottom: 155px;
+        left: 10%;
+    }
+}
+
+@media (max-width: 992px) {
+    .pet-container {
+        width: 150px;
+        height: 230px;
+        margin: 5px;
+        margin-bottom: 95px;
+        left: 12%;
+    }
+    .pet-click-container {
+        width: 150px;
+        height: 230px;
+    }
+
+    .pet-bar {
+        height: 40px;
+        width: 150px;
+    }
+
+    .pic-pet-container {
+        width: 100px;
+        height: 100px;
+        left: 17%;
+        bottom: 75%;
+    }
+    .pic-click-container {
+        width: 100px;
+        height: 100px;
+        left: 17%;
+        bottom: 75%;
+    }
+
+    .i-paw-container {
+        font-size: 1rem;
+        bottom: 310%;
+    }
+
+    .des-pet-container {
+        width: 170px;
+    }
+
+    .i-eyes-container {
+        font-size: 1.5rem;
+        left: 77%;
+    }
+
+    .i-heart-container {
+        font-size: 1.5rem;
+        left: 7%;
+    }
+
+    .i-envelope-container {
+        font-size: 1.5rem;
+        left: 43%;
+    }
+
+    .i-paw-container {
+        font-size: 1rem;
+    }
+
+    .i-cake-container {
+        font-size: 1rem;
+        bottom: 260%;
+    }
+
+    .i-home-container {
+        font-size: 1rem;
+        bottom: 210%;
+    }
+
+    .loc-pet-container {
+        width: 100px;
+        left: 25%;
+        bottom: 21%;
+        font-size: 80%;
+    }
+
+    .i-loc-container {
+        bottom: 150%;
+        font-size: 1rem;
+    }
+
+    .race-pet-container {
+        bottom: 46%;
+        left: 25%;
+        font-size: 0.8rem;
+    }
+
+    .age-pet-container {
+        width: 110px;
+        bottom: 38%;
+        left: 25%;
+    }
+
+    .i-gender-container {
+        bottom: 120%;
+    }
+
+    .name-pet-container {
+        width: 100px;
+        left: 30%;
+        top: 25%;
+    }
+
+    .home-pet-container {
+        width: 100px;
+        bottom: 28%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 375px) {
+    .pet-container {
+        left: 8%;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .pet-container {
+        left: 6%;
+    }
+}
+
+@media (max-width: 320px) {
+    .pet-container {
+        left: 1%;
+    }
+}
+
+@media (max-width: 280px) {
+    .pet-container {
+        left: 28%;
+    }
+}

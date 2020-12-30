@@ -1,0 +1,124 @@
+.infos-container {
+    width: 75%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.infos-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.infos-title {
+    background-color: #13E2BA;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px 20px 10px 20px;
+    padding: 5px;
+}
+
+.infos-content {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 20px;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 68%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16);
+}
+
+.infos-small-content {
+    max-height: 35%;
+}
+
+.input-edit-alert {
+    color: #ED1944;
+    font-size: .75rem;
+    margin-top: -0.25rem;
+    margin-left: 1rem;
+}
+
+.infos-invoice {
+    color: #8F8F8F;
+}
+
+.infos-btn {
+    width: 75%;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+/* Hide arrow for number type input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.infos-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.infos-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.infos-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #13E2BA;
+}
+
+@media (max-width: 1440px) {
+    .infos-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .infos-container {
+        width: 100%;
+    }
+    .background-page {
+        overflow-y: scroll;
+    }
+
+    .infos-content {
+        margin: 0 20px;
+        max-height: 100%;
+    }
+
+    .infos-row {
+        margin: 0;
+    }
+
+    .infos-row .infos-content {
+        width: 100%;
+    }
+
+    .infos-row .infos-small-content {
+        margin: 0 20px;
+    }
+
+    .infos-btn {
+        width: 50%;
+        margin: 2rem auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .infos-container {
+        width: 95%;
+    }
+
+    .infos-btn{
+        width: 90%;
+    }
+}

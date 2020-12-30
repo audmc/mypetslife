@@ -1,0 +1,61 @@
+.input-edit-container {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    min-width: 300px;
+}
+
+.input-edit-icon {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+}
+
+.input-edit {
+    border: none;
+    width: 81%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 0.5rem;
+    color: #999999;
+    line-height: 2rem;
+    padding-left: 2.5rem;
+    border-radius: 5px;
+    font-family: Montserrat, sans-serif;
+}
+
+.input-edit:focus{
+    color: #333333;
+    outline: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+}
+
+.input-edit-empty{
+    background-color: #F2F2F2;
+    box-shadow: none;
+}
+
+.input-edit-empty::placeholder{
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.input-edit-empty:focus{
+    color: #333333;
+    outline: none;
+    box-shadow: none;
+}
+
+.input-edit-show-password{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    color: #424b43;
+}
+
+.input-edit-alert{
+    color: #ED1944;
+    font-size: .75rem;
+    margin-top: -0.25rem;
+    margin-left: 1rem;
+}

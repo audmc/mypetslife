@@ -1,0 +1,227 @@
+.navbar-top {
+    background-color: #13E2BA;
+    font-family: Comfortaa, sans-serif;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.navbar-animation {
+    animation: navbarTop 0.7s ease-in-out;
+}
+
+.navbar-welcome {
+    font-family: Comfortaa, sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    display: inline-block;
+    vertical-align: top !important;
+    margin-left: 3rem;
+}
+
+.welcome-navbar-nav {
+    margin-right: 1rem !important;
+}
+
+.navbar-nav-center {
+    margin: 0 8vw 0 auto;
+}
+
+.navbar-toggler:focus {
+    outline-color: #C3F8EE;
+}
+
+.navbar-nav-center .dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-nav-left .dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-nav-center .nav-link {
+    color: #C3F8EE;
+    font-weight: bold;
+    padding: 8px 1rem !important;
+    transition: .2s ease-in-out;
+}
+
+.navbar-nav-center .nav-link:hover {
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+}
+
+.nav-link .active {
+    color: #ffffff;
+}
+
+.active-tab {
+    color: #ffffff!important;
+}
+
+.navbar-nav-left {
+    margin-right: 3rem;
+    font-size: 1.15rem;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-connexion {
+    margin-left: 3rem;
+}
+
+.navbar-nav-left .nav-link {
+    padding: 08px 1rem !important;
+}
+
+.navbar-nav-left .nav-link:hover > i {
+    transform: scale(1.05);
+    color: #ffffff;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    text-decoration: none;
+    background-color: #13E2BA;
+    font-weight: bold;
+}
+
+#top-navbar-nav > div > div.show.dropdown.nav-item > div {
+    background-color: #13E2BA;
+    border: none;
+}
+
+div.navbar-nav-left.navbar-nav > div > div {
+    background-color: #13E2BA;
+    border: none;
+}
+
+div.navbar-nav-left.navbar-nav > div > div a {
+    color: #ffffff;
+}
+
+
+#top-navbar-nav > div > div.show.dropdown.nav-item > div > a {
+    color: #ffffff;
+}
+
+#top-navbar-nav > div > div.show.dropdown.nav-item > div > a:hover {
+    font-weight: bold;
+    background-color: #13E2BA;
+}
+
+#welcome-navbar-nav > div > div.show.dropdown.nav-item > div {
+    background-color: #13E2BA;
+    border: none;
+}
+
+#welcome-navbar-nav > div > div.show.dropdown.nav-item > div > a {
+    color: #ffffff;
+}
+
+#welcome-navbar-nav > div > div.show.dropdown.nav-item > div > a:hover {
+    font-weight: bold;
+    background-color: #13E2BA;
+}
+
+@keyframes navbarTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1260px) {
+    .navbar-top {
+        font-size: 1rem;
+    }
+
+    .navbar-welcome {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-top {
+        background: linear-gradient(150deg, rgba(19, 226, 186, 1) 0%, rgba(19, 226, 226, 1) 100%);
+    }
+
+    .navbar-welcome .language-selector.dropdown.nav-item > a {
+        padding: 0;
+    }
+
+    .navbar-nav-center {
+        margin: auto;
+    }
+
+    .navbar-nav-left {
+        flex-direction: row;
+        position: absolute;
+        top: 10px;
+        right: 2.8rem;
+        padding: 0.5rem 1rem 0.5rem 2rem;
+    }
+
+    .navbar-welcome .navbar-nav-left {
+        top: 5px;
+        right: 2rem;
+    }
+
+    .navbar-welcome .navbar-toggler {
+        margin-right: 0 !important;
+    }
+
+    .navbar-nav-left .show .nav-link {
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .navbar-toggler .navbar-toggler-icon {
+        font-size: 1rem;
+    }
+
+    .navbar-nav-left .nav-link {
+        padding: 0 0.75rem !important;
+    }
+
+    #welcome-navbar-nav {
+        background: linear-gradient(150deg, rgba(19, 226, 186, 1) 0%, rgba(19, 226, 226, 1) 100%);
+        border-radius: 5px;
+        z-index: 5;
+    }
+
+    .navbar-connexion {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar-welcome .navbar-nav-left .nav-item a {
+        padding: 0 !important;
+    }
+
+    .navbar-welcome {
+        padding-right: 0.25rem;
+    }
+
+    .navbar-welcome .language-selector {
+        right: 3.5rem !important;
+    }
+
+    .navbar-welcome .navbar-nav-left {
+        right: 0.5rem;
+    }
+}

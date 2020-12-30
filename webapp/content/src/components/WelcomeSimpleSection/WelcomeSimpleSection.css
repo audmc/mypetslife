@@ -1,0 +1,136 @@
+.welcome-simple-section-container {
+    background: center top no-repeat;
+    background-size: cover;
+    z-index: 0;
+    align-items: center;
+    padding: 0 12rem;
+    height: 100vh;
+}
+
+.welcome-simple-section-container-text {
+    padding: 0;
+}
+
+.welcome-simple-section-container-title {
+    color: #ED1944;
+    font-weight: bold;
+    margin: 2rem auto;
+}
+
+.welcome-simple-section-container-content {
+    color: #333333;
+    font-family: Montserrat, sans-serif;
+    max-width: 50vw;
+}
+
+.welcome-simple-section-container-image {
+    text-align: center;
+}
+
+.welcome-simple-section-image {
+    margin: auto;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.carousel-indicators li {
+    background-color: #333333;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    width: 25px;
+    border-radius: 20% / 50%;
+}
+
+@media (max-width: 992px) {
+    .welcome-simple-section-container {
+        padding: 0 8rem;
+        align-items: normal;
+    }
+
+    .welcome-simple-section-container-image {
+        height: fit-content;
+        padding-top: 56px;
+    }
+
+    .welcome-simple-section-image {
+        margin-top: 2rem;
+        height: 25vh;
+    }
+
+    .welcome-simple-section-container-text {
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-simple-section-container {
+        padding: 0 5rem;
+    }
+
+    .welcome-simple-section-container-content {
+        max-width: 100%;
+    }
+
+    .welcome-simple-section-container-title {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome-simple-section-container {
+        padding: 0 3rem;
+    }
+
+    .welcome-simple-section-container-title {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .welcome-simple-section-container {
+        padding: 0 2rem;
+        font-size: .95rem;
+    }
+
+    .welcome-simple-section-image {
+        height: 15vh;
+        margin-top: 1rem;
+    }
+
+    .welcome-simple-section-container-content p {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .welcome-simple-section-container-title {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .welcome-simple-section-image {
+        margin-top: 0;
+    }
+
+    .welcome-simple-section-container-title {
+        margin: 0.75rem 0;
+    }
+
+    .welcome-simple-section-container-content {
+        font-size: .83rem;
+    }
+}

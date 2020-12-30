@@ -1,0 +1,94 @@
+.popup-edit-daily-section {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    align-items: center;
+    max-height: 95vh;
+}
+
+.popup-edit-daily-section-body {
+    padding-right: 0.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 600px;
+}
+
+.popup-edit-daily-section-body hr {
+    width: 90%;
+}
+
+.popup-edit-daily-section-body .section-title {
+    color: #ED1944;
+    margin-top: 1.5rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.popup-edit-daily-section-body .section-breakline {
+    border-bottom: 1px solid #ED1944;
+    margin-bottom: 1.5rem;
+    width: 200px;
+}
+
+.environment-input-container {
+    padding: 0 1rem;
+}
+
+.edit-daily-input-absent {
+    width: 30%;
+    padding-right: 135px;
+    min-width: 200px;
+}
+
+.popup-edit-input-complement-absent{
+    line-height: 34px;
+    width: 125px;
+    height: 2rem;
+    margin-left: -130px;
+}
+
+.edit-daily-input-walks {
+    width: 45%;
+    padding-right: 220px;
+    min-width: 282px;
+}
+
+.popup-edit-input-complement-walks{
+    line-height: 34px;
+    width: 210px;
+    height: 2rem;
+    margin-left: -220px;
+}
+
+@media (max-width: 1500px) {
+    .popup-edit-daily-section-body {
+        overflow-y: auto;
+        padding: 0 1rem;
+        height: 80vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .popup-edit-daily-section-body {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .popup-edit-daily-section-body {
+        height: 80vh;
+    }
+
+    .popup-edit-daily-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .environment-input-container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .popup-edit-daily-section-body {
+        height: 75vh;
+    }
+}

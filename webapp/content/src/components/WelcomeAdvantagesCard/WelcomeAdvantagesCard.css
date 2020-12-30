@@ -1,0 +1,80 @@
+.welcome-advantages-card {
+    border: none;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.welcome-advantages-card .card-img-top {
+    padding: 1rem 2rem;
+    margin: auto;
+    width: 75%;
+}
+
+.welcome-advantages-card .card-title {
+    font-family: Comfortaa, sans-serif;
+    color: #13E2BA;
+    text-align: center;
+    height: 3rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.translate-top {
+    transform: translateY(-1rem);
+}
+
+.translate-bottom {
+    transform: translateY(1rem);
+}
+
+@media (max-width: 992px) {
+    .welcome-advantages-card {
+        width: 18rem !important;
+    }
+
+    .translate-top, .translate-bottom {
+        transform: translateY(0) !important;
+    }
+
+    .welcome-advantages-card .card-title {
+        height: 4rem;
+    }
+
+
+    .translate-top {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 425px) {
+    .welcome-advantages-card {
+        height: 520px;
+    }
+
+    .welcome-advantages-card .card-title {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .welcome-advantages-card .card-body{
+        padding-bottom: 2rem ;
+    }
+}
+
+@media (max-width: 320px) {
+    .welcome-advantages-card .card-body{
+        padding: 0 1rem ;
+    }
+
+    .welcome-advantages-card {
+        height: 475px;
+    }
+
+    .card-deck .card {
+        margin-top: 20vh;
+    }
+}

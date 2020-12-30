@@ -1,0 +1,30 @@
+.validate-messages{
+    width: 70%;
+    font-size: 0.8rem;
+    margin: auto auto 1rem auto;
+    text-align: left;
+    display: none;
+}
+
+.email-field{
+    display: none;
+}
+
+.confirm-button{
+    width: 70%;
+}
+
+.small-confirm-button{
+    width: 65%;
+    margin-right: 5px;
+}
+
+@media (max-width: 424px) {
+    .confirm-button{
+        width: 100%;
+    }
+
+    .small-confirm-button{
+        width: 95%;
+    }
+}

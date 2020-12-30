@@ -1,0 +1,245 @@
+/*ANIMATION*/
+#bras-chien {
+    animation: brasChien 2s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+#bras-chat {
+    animation: brasChat 1s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+#Tete {
+    animation: tete 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#Chat {
+    animation: chat 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+
+#queue {
+    animation: queue 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#langue {
+    animation: langue 1s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes brasChien {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(10deg) rotateY(15deg);
+    }
+}
+
+@keyframes brasChat {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(10deg);
+    }
+}
+
+@keyframes chat {
+    from {
+        transform: rotateZ(-1deg);
+    }
+    to {
+        transform: rotateZ(1deg);
+    }
+}
+
+@keyframes tete {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(5deg) rotateZ(5deg);
+    }
+}
+
+@keyframes queue {
+    from {
+        transform: rotateX(0deg) rotateZ(2deg);
+    }
+    to {
+        transform: rotateX(10deg) rotateZ(10deg);
+    }
+}
+
+@keyframes langue {
+    from {
+        transform: rotateX(0deg) ;
+    }
+    to {
+        transform: rotateX(35deg) ;
+    }
+}
+
+/*STYLE*/
+#welcome-animation .cls-1, #welcome-animation .cls-2, #welcome-animation .cls-3, #welcome-animation .cls-4, #welcome-animation .cls-5 {
+    fill: none;
+    stroke: #fd5e5a;
+    stroke-miterlimit: 10;
+}
+
+#welcome-animation .cls-2 {
+    stroke-dasharray: 11.82 11.82;
+}
+
+#welcome-animation .cls-3 {
+    stroke-dasharray: 12.33 12.33;
+}
+
+#welcome-animation .cls-4 {
+    stroke-dasharray: 11.81 11.81;
+}
+
+#welcome-animation .cls-5 {
+    stroke-dasharray: 11.93 11.93;
+}
+
+#welcome-animation .cls-6 {
+    fill: #e6edfb;
+}
+
+#welcome-animation .cls-7 {
+    fill: url(#Dégradé_sans_nom_13);
+}
+
+#welcome-animation .cls-8 {
+    fill: #f2f2f2;
+}
+
+#welcome-animation .cls-14, #welcome-animation .cls-9 {
+    fill: #c1dee2;
+}
+
+#welcome-animation .cls-9 {
+    opacity: 0.2;
+    isolation: isolate;
+}
+
+#welcome-animation .cls-10 {
+    opacity: 0.7;
+}
+
+#welcome-animation .cls-11 {
+    fill: #69a1ac;
+}
+
+#welcome-animation .cls-12 {
+    fill: #89c5cc;
+}
+
+#welcome-animation .cls-13 {
+    opacity: 0.5;
+}
+
+#welcome-animation .cls-15 {
+    fill: #dbcbf5;
+}
+
+#welcome-animation .cls-16 {
+    fill: #b28b67;
+}
+
+#welcome-animation .cls-17 {
+    fill: #191847;
+}
+
+#welcome-animation .cls-18 {
+    fill: #c5cfd6;
+}
+
+#welcome-animation .cls-19 {
+    fill: #1f28cf;
+}
+
+#welcome-animation .cls-20 {
+    fill: #e4e4e4;
+}
+
+#welcome-animation .cls-21 {
+    fill: #6b6863;
+}
+
+#welcome-animation .cls-22 {
+    fill: #a9a9a9;
+}
+
+#welcome-animation .cls-23 {
+    fill: #3d1046;
+}
+
+#welcome-animation .cls-24 {
+    fill: #d5d5d7;
+}
+
+#welcome-animation .cls-25 {
+    fill: #fff7cf;
+}
+
+#welcome-animation .cls-26 {
+    fill: #514f4a;
+}
+
+#welcome-animation .cls-27 {
+    fill: #999;
+}
+
+#welcome-animation .cls-28 {
+    fill: url(#Dégradé_sans_nom_4);
+}
+
+#welcome-animation .cls-29 {
+    fill: #ec1d45;
+}
+
+#welcome-animation .cls-30 {
+    fill: #d3d3d3;
+}
+
+#welcome-animation .cls-31 {
+    fill: #e1ddda;
+}
+
+#welcome-animation .cls-32 {
+    fill: #e5e5e3;
+}
+
+#welcome-animation .cls-33 {
+    fill: #0e0a07;
+}
+
+#welcome-animation .cls-34 {
+    fill: #2d2926;
+}
+
+#welcome-animation .cls-35 {
+    fill: #f98988;
+}
+
+#welcome-animation .cls-36 {
+    fill: #080d07;
+}
+
+#welcome-animation .cls-37 {
+    fill: #2b44ff;
+}
+
+#welcome-animation .cls-38 {
+    fill: #cc0937;
+}

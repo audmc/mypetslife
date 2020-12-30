@@ -1,0 +1,28 @@
+#Head-custom-pet-animation{
+    animation: Head-custom-pet-animation 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#Right_Arm-custom-pet-animation {
+    animation: Right_Arm-custom-pet-animation 1s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+@keyframes Head-custom-pet-animation {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(5deg) rotateZ(5deg);
+    }
+}
+
+@keyframes Right_Arm-custom-pet-animation {
+    from {
+        transform: rotateZ(-0.5deg);
+    }
+    to {
+        transform: rotateZ(0.5deg);
+    }
+}

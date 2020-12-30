@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Comfortaa, sans-serif;
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+}
+
+img {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+.vh-90 {
+    height: 90vh !important;
+}
+
+.mpl-welcome-footer{
+    height: 70vh;
+    position: relative;
+}
+
+.vh-70 {
+    height: 70vh !important;
+}
+
+.font-1 {
+    font-family: Comfortaa, sans-serif;
+}
+
+.font-2 {
+    font-family: Montserrat, sans-serif;
+}
+
+.fst-italic{
+    font-style: italic;
+}
+
+.color-green {
+    color: #13E2BA;
+}
+
+.color-red {
+    color: #ED1944;
+}
+
+.color-pink {
+    color: #EEBBEC;
+}
+
+.color-dark {
+    color: #333333;
+}
+
+.color-light {
+    color: #8F8F8F;
+}
+
+.color-gradiant-green {
+    background: -webkit-linear-gradient(45deg, #13E2BA, #13E2E2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-gradiant-red {
+    background: -webkit-linear-gradient(45deg, #FF7541, #EC1D45);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-gradiant-black {
+    background: -webkit-linear-gradient(45deg, #585858, #333333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mt-nav {
+    margin-top: 54px;
+}
+
+.full-page-w-nav {
+    margin-top: 56px;
+    height: calc(100vh - 56px);
+}
+
+.btn-mpl-primary {
+    font-family: Montserrat, sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #fff;
+    border-color: rgb(19, 226, 186);
+    background: linear-gradient(90deg, rgba(19, 226, 186, 1) 0%, rgba(19, 226, 226, 1) 100%);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-mpl-primary:active {
+    border-color: rgb(7, 196, 137);
+    background: linear-gradient(90deg, rgba(8, 203, 165, 1) 0%, rgba(8, 205, 205, 1) 100%);
+    box-shadow: 0 0 0 0.2rem rgba(19, 226, 186, 0.5);
+}
+
+.btn-mpl-primary:focus {
+    border-color: rgb(7, 196, 137);
+    outline: none;
+    background: linear-gradient(90deg, rgba(8, 203, 165, 1) 0%, rgba(8, 205, 205, 1) 100%);
+    box-shadow: 0 0 0 0.2rem rgba(19, 226, 186, 0.5);
+}
+
+.btn-mpl-primary:hover {
+    background: linear-gradient(90deg, rgba(8, 203, 165, 1) 0%, rgba(8, 205, 205, 1) 100%);
+}
+
+.btn-mpl-secondary {
+    font-family: Montserrat, sans-serif;
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid;
+    padding: .375rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #13E2BA;
+    border-color: #13E2BA;
+    background: #ffffff;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-mpl-secondary:active {
+    border-color: #13E2BA;
+    background: #fafafa;
+    box-shadow: 0 0 0 0.2rem rgba(19, 226, 186, 0.5);
+}
+
+.btn-mpl-secondary:focus {
+    outline: none;
+    border-color: #13E2BA;
+    background: #fafafa;
+    box-shadow: 0 0 0 0.2rem rgba(19, 226, 186, 0.5);
+}
+
+.btn-mpl-secondary:hover {
+    background: linear-gradient(90deg, rgba(8, 203, 165, 1) 0%, rgba(8, 205, 205, 1) 100%);
+    color: white;
+}
+
+.blue-scroll::-webkit-scrollbar {
+    width: 7px;
+}
+
+.blue-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.blue-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #13E2BA;
+}
+
+.btn-mpl-alert {
+    font-family: Montserrat, sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #fd6a41;
+    padding: .375rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #fff;
+    background: linear-gradient(90deg, #FF7541 0%, #EC1D45 100%);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-mpl-alert:active {
+    border-color: rgba(226, 19, 59, 1);
+    background: linear-gradient(90deg, rgba(240, 82, 56, 1) 0%, rgb(186, 19, 59) 100%);
+    box-shadow: 0 0 0 0.2rem rgba(180, 23, 54, 0.5);
+}
+
+.btn-mpl-alert:focus {
+    border-color: rgba(226, 19, 59, 1);
+    outline: none;
+    background: linear-gradient(90deg, rgba(240, 82, 56, 1) 0%, rgba(186, 19, 59, 1) 100%);
+    box-shadow: 0 0 0 0.2rem rgba(180, 23, 54, 0.5);
+}
+
+.btn-mpl-alert:hover {
+    background: linear-gradient(90deg, rgba(240, 82, 56, 1) 0%, rgba(186, 19, 59, 1) 100%);
+}
+
+.label-input-mpl {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: #585858;
+    font-size: 0.8rem;
+    width: 70%;
+    margin: auto auto 0.25rem auto;
+    text-align: left;
+}
+
+.input-mpl {
+    background-color: #F2F2F2;
+    border: none;
+    width: 70%;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    color: #13E2BA;
+    line-height: 1.8rem;
+    border-radius: 5px;
+    font-family: Montserrat, sans-serif;
+}
+
+select.input-mpl {
+    height: 2rem;
+}
+
+.input-mpl:focus {
+    background-color: #ffffff;
+    outline-color: #13E2BA;
+}
+
+select.input-mpl:focus {
+    background-color: #ffffff;
+    border-color: #13e2ba;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(19, 226, 186, 1);
+}
+
+.not-empty {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    background-color: #ffffff !important;
+    outline-color: #13E2BA;
+}
+
+
+.fp-slidesNav.fp-bottom {
+    text-align: center !important;
+    bottom: .25rem !important;
+}
+
+.zoom-1 {
+    transition: all .2s ease-in-out;
+}
+
+.zoom-1:hover {
+    transform: scale(1.05);
+}
+
+.zoom-2 {
+    transition: all .2s ease-in-out;
+}
+
+.zoom-2:hover {
+    transform: scale(1.2);
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.under-button-link {
+    margin-top: 5px;
+    color: darkgrey;
+    font-size: 0.6rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    cursor: pointer;
+}
+
+div.outcome-background.full-page-w-nav {
+    position: fixed;
+    background: url("../svg/leaf-bottom-left.svg") left bottom,
+    url("../svg/leaf-bottom-right.svg") right bottom,
+    url("../svg/leaf-mid-left.svg") center left,
+    url("../svg/leaf-mid-right.svg") center right,
+    url("../svg/leaf-top-left.svg") top left,
+    url("../svg/leaf-top-right.svg") top right;
+    background-size: 20vh;
+    background-position: left bottom, right bottom, center left, center right, top left, top right;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    z-index: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    margin: 0;
+    margin-top: 56px;
+    background-color: #F9F9FA;
+
+}
+
+html > body > div#root {
+    width: 100%;
+    max-width: 100%;
+}
+
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toast {
+    position: relative;
+    min-width: 10vw;
+}
+

@@ -1,0 +1,29 @@
+.menu-top-container {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 1029;
+}
+
+.menu-top-nav {
+    width: 55%;
+    margin: auto;
+    background: #ffffff;
+    color: #ED1944;
+    height: 56px;
+    border-radius: 0 0 15px 15px;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+@media (max-width: 1300px) {
+    .menu-top-nav {
+        width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-top-nav {
+        width: 75%;
+    }
+}

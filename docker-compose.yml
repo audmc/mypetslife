@@ -1,0 +1,81 @@
+version: "2.2"
+
+networks:
+  frontend:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/24
+
+services:
+  portainer:
+    container_name: portainer-container
+    image: portainer/portainer
+    #PrÃ©sision de l'adrres IP voulu
+    networks:
+      frontend:
+        ipv4_address: 172.21.0.10
+    command: -H unix:///var/run/docker.sock
+    restart: always
+    expose:
+      - "9000"
+      - "8000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+  nodejs:
+    container_name: nodejs-container
+    build: server
+    image: node_image
+    environment:
+      PORT: 8080
+      NODE_ENV: development
+    networks:
+      frontend:
+        ipv4_address: 172.21.0.5
+    #L'ensemble des sources code de l'api devront être contenu dans ../src
+    volumes:
+      - ../src:/usr/src
+    restart: always
+  react-webapp:
+    container_name: react-webapp-container
+    build: webapp
+    image: webapp_image
+    environment:
+      PORT: 3000
+      NODE_ENV: development
+    networks:
+      frontend:
+        ipv4_address: 172.21.0.2
+    volumes:
+      - ../content:/usr/content
+    stdin_open: true
+  react-dashboard:
+    container_name: reactjs-dashboard-container
+    build: dashboard
+    image: dashboard_image
+    environment:
+      PORT: 3001
+      NODE_ENV: development
+    networks:
+      frontend:
+        ipv4_address: 172.21.0.6
+    volumes:
+      - ../content:/usr/content
+    stdin_open: true
+  react-asso:
+    container_name: reactjs-asso-container
+    build: asso
+    image: asso_image
+    environment:
+      PORT: 3002
+      NODE_ENV: development
+    networks:
+      frontend:
+        ipv4_address: 172.21.0.7
+    volumes:
+      - ../content:/usr/content
+    stdin_open: true
+volumes:
+  portainer_data:
+    name: portainer_data

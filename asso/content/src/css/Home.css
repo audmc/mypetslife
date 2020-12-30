@@ -1,0 +1,64 @@
+.home-app-container {
+    background-color: white;
+    width: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: auto auto 20px auto;
+}
+
+.search-container {
+    width: 40%;
+    background-color: white;
+    margin: auto auto 15px auto;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(19, 226, 186, 1);
+}
+
+.search-input {
+    border: none;
+    padding-left: 1rem;
+    color: #13E2BA;
+    font-family: Montserrat, sans-serif;
+}
+
+.search-input::placeholder {
+    color: #13E2BA;
+    font-family: Montserrat, sans-serif;
+}
+
+.search-input:focus {
+    background-color: #ffffff;
+    outline-color: #ffffff;
+}
+
+
+@media (max-width: 1440px) {
+    .home-app-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .search-container {
+        width: 75%;
+    }
+
+    .home-app-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 425px) {
+    .search-container {
+        width: 90%;
+    }
+
+    .home-app-container {
+        width: 90%;
+    }
+
+    .home-app-container {
+        margin: auto auto 5px auto;
+    }
+}

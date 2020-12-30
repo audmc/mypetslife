@@ -1,0 +1,87 @@
+#Head{
+    animation: Head 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#Name{
+    animation: Name 2s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+#Address{
+    animation: Address 1s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#Phone{
+    animation: Phone 3s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#Date{
+    animation: Date 1.5s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#Right_Arm {
+    animation: Right_Arm 1s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+@keyframes Head {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(5deg) rotateZ(5deg);
+    }
+}
+
+@keyframes Name {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg) scale(0.95);
+    }
+    to {
+        transform: rotateX(5deg) rotateZ(2deg) scale(1);
+    }
+}
+
+@keyframes Address {
+    from {
+        transform: rotateX(-2deg) rotateZ(-2deg) scale(0.95);
+    }
+    to {
+        transform: rotateX(1deg) rotateZ(0deg) scale(1);
+    }
+}
+
+@keyframes Phone {
+    from {
+        transform: rotateX(0deg) rotateZ(2deg) translate(-10px);
+    }
+    to {
+        transform: rotateX(5deg) rotateZ(5deg) translate(-0px);
+    }
+}
+
+@keyframes Date {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg) translate(-10px);
+    }
+    to {
+        transform: rotateX(5deg) rotateZ(1deg) translate(0px);
+    }
+}
+
+@keyframes Right_Arm {
+    from {
+        transform: rotateZ(-0.5deg);
+    }
+    to {
+        transform: rotateZ(0.5deg);
+    }
+}

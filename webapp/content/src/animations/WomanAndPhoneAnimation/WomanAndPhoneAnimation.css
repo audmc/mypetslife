@@ -1,0 +1,74 @@
+#circle-bottom {
+    animation: circle-bottom 3s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#polygon-right {
+    animation: polygon-right 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#polygon-left {
+    animation: polygon-left 3s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+
+#Group {
+    animation: Illustration 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#right-arm {
+    animation: right-arm 3s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+@keyframes circle-bottom {
+    from {
+        transform: translate(-200px,0px);
+    }
+    to {
+        transform: translate(50px,-30px);
+    }
+}
+
+@keyframes polygon-right {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes polygon-left {
+    from {
+        transform: translate(0px,0px) rotateY(0deg);
+    }
+    to {
+        transform: translate(50px,50px) rotateY(360deg);
+    }
+}
+
+@keyframes Illustration {
+    from {
+        transform: rotateX(0deg) rotateZ(2deg);
+    }
+    to {
+        transform: rotateX(8deg) rotateZ(8deg);
+    }
+}
+
+@keyframes right-arm {
+    from {
+        transform: rotateX(0deg) rotateZ(2deg);
+    }
+    to {
+        transform: rotateX(3deg) rotateZ(-3deg);
+    }
+}

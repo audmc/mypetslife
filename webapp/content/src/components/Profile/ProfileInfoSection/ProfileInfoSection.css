@@ -1,0 +1,43 @@
+.profile-infos-section-title {
+    padding: 1.5rem 0 .75rem 0;
+    border-bottom: 1px solid #F58DA1;
+}
+
+.profile-infos-section-title h5 {
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+.profile-infos-section-body {
+    background-color: #F9F9FA;
+    margin-top: 1rem;
+    border-radius: 5px;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.profile-infos-section-edit{
+    position: absolute;
+    top: 0.25rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    .profile-infos-section-title h5 {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .profile-infos-section-title h5 {
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .profile-infos-section-edit {
+        font-size: 1rem;
+    }
+}

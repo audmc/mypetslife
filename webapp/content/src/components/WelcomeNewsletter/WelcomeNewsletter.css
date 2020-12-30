@@ -1,0 +1,90 @@
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.newsletter-check {
+    font-size: 28px;
+    margin: -6px 0 0 .5rem;
+    animation: newsletterCheck 1s ease-in-out;
+    background: linear-gradient(90deg, rgba(19, 226, 186, 1) 0%, rgba(19, 226, 226, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.newsletter-cross {
+    font-size: 28px;
+    margin: -6px 0 0 .5rem;
+    animation: newsletterCheck 1s ease-in-out;
+    background: linear-gradient(90deg, rgba(250, 92, 66, 1) 0%, rgba(236, 29, 69, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#newsletter-subscribe {
+    animation: newsletterCheck 1s ease-in-out;
+}
+
+.newsletter-illustration svg {
+    width: 75%;
+    padding-right: 5rem;
+}
+
+.newsletter-content {
+    padding-left: 3rem;
+}
+
+.newsletter-text {
+    padding: 0;
+}
+
+.input-newsletter {
+    width: 50%;
+}
+
+.newsletter-text {
+    height: 300px;
+}
+
+.newsletter-error {
+    color: #ED1944;
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    background-color: rgba(237, 25, 68, 0.1);
+    margin: 0;
+    animation: newsletterCheck 1s ease-in-out;
+}
+
+.mailChime-hidden {
+    position: absolute;
+    left: -5000px;
+}
+
+@media (max-width: 992px) {
+    .newsletter-text {
+        width: 80%;
+        margin: auto;
+    }
+
+    .input-newsletter {
+        width: 90%;
+    }
+
+    .newsletter-error {
+        width: 90%;
+    }
+}
+
+@keyframes newsletterCheck {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

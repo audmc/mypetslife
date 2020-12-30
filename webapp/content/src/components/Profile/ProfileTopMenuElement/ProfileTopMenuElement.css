@@ -1,0 +1,30 @@
+.menu-top-item {
+    font-family: Comfortaa, sans-serif;
+    color: #ED1944;
+    font-weight: bold;
+    flex: 1;
+    font-size: 1.5rem;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.menu-top-separator {
+    height: 2rem;
+    border-right: 1px solid #ED1944;
+}
+
+.menu-top-item-active {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .menu-top-item {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu-top-item {
+        font-size: 1.5rem;
+    }
+}

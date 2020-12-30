@@ -1,0 +1,60 @@
+.advantages-bg {
+    position: relative;
+    padding: 0 10%;
+    align-items: center;
+    display: flex;
+}
+
+.advantages-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: saturate(30%);
+    background: url("../../svg/welcome-advantages-bg.svg") center top no-repeat;
+    background-size: contain;
+}
+
+.advantages-card-cols {
+    position: relative;
+    height: auto;
+    align-items: center;
+}
+
+.advantages-card-container {
+    display: flex;
+}
+
+.advantages-carousel {
+    width: 100vw;
+}
+
+.advantages-carousel .carousel-inner {
+    padding: 3rem 0 4rem 0;
+}
+
+.advantages-card-container > div.fp-controlArrow.fp-next {
+    display: none;
+}
+
+.advantages-card-container .fp-controlArrow.fp-prev {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .advantages-bg {
+        padding: 0;
+    }
+
+    .advantages-bg::before {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card-deck .card {
+        flex: initial;
+        margin: 64px auto 0 auto;
+    }
+}

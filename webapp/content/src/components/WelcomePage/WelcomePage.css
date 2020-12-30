@@ -1,0 +1,144 @@
+:root {
+    --welcomeLogoSize: 8vw;
+}
+
+.welcome-bg {
+    background: url("../../svg/background-navbar-welcome-page.svg") center top no-repeat;
+    background-size: contain;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.welcome-navbar-section {
+    background-size: 125px 175px;
+}
+
+.welcome-logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: var(--welcomeLogoSize);
+}
+
+.welcome-row {
+    margin: 0;
+    min-height: calc(100vh - var(--welcomeLogoSize));
+    height: auto;
+    z-index: -1;
+}
+
+.welcome-col {
+    padding: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-container {
+    margin: 3rem 5rem;
+    z-index: 0;
+}
+
+.welcome-main-title {
+    font-weight: bold;
+    color: #ED1944;
+    font-size: 2.5rem;
+}
+
+.welcome-subtitle {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.welcome-illustration {
+    width: 65vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.welcome-btn {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 1400px) {
+    .welcome-container {
+        margin: 1rem 3rem;
+        padding-top: 5rem;
+    }
+
+    .welcome-main-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .welcome-illustration {
+        margin: auto;
+        position: relative;
+        padding-top: 0;
+    }
+
+    :root {
+        --welcomeLogoSize: 5rem;
+    }
+
+    .welcome-col {
+        padding-top: 3rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .welcome-illustration {
+        width: 90vw;
+    }
+
+    .welcome-container {
+        margin: 1rem;
+        padding-top: 1rem;
+    }
+
+    .welcome-main-title {
+        font-size: 1.5rem;
+    }
+
+    .welcome-subtitle {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .welcome-logo {
+        top: 1rem;
+        width: 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .welcome-container {
+        margin: 1rem 0;
+    }
+
+    .welcome-btn {
+        margin-top: 1rem;
+    }
+
+    .welcome-subtitle {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .welcome-main-title {
+        font-size: 1.25rem;
+    }
+}

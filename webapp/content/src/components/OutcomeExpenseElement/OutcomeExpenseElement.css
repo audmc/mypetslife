@@ -1,0 +1,213 @@
+.expense-item{
+    position: relative;
+    left: 1em;
+    top:1em;
+    background-color: #F9F9FA;
+    height: min-content;
+    max-width: 95%;
+    border-radius: 2%;
+    margin-bottom: 1.3em;
+}
+
+.testest{
+    height: min-content;
+}
+
+p.expense-item-elements{
+    height:min-content;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px !important;
+    color: #333333;
+}
+
+@media (max-width: 992px){
+    .expense-item>p{
+        font-size: 16px !important;
+        font-family: 'Montserrat', sans-serif;
+    }.expense-item-container{
+        margin-right: 0;
+        margin-left: 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }.action-icon::before{
+        position: relative !important;
+        margin:0;
+        margin-left: 1.8em;
+        margin-right: 1.8em;
+    }
+}
+
+@media (max-width: 768px){
+    .expense-item{
+    max-width: 90%;
+    width: 90vw;
+    padding: 0;
+    }
+    .expense-item-elements{
+        margin-left: 1.4em;
+    }
+    .expense-item-category-icon-div{
+        height: 60% !important;
+    }
+    .expense-item-flex-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .expense-item-flex-container>.expense-item-category-icon{
+        order: 2;
+    }
+    .expense-item-flex-container>.expense-item-content-main-info.firstel{
+        order: 1;
+    }
+    .expense-item-flex-container>.expense-item-pet-picture{
+        order: 3;
+    }
+    .expense-item-flex-container>.expense-item-secondelement{
+        order: 4;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 1em;
+        text-align: -webkit-match-parent;
+    }
+    .expense-item-flex-container>.action-icon-col{
+        order: 5;
+    }
+    .outcome-user-avatar>img{
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+    .expense-item-container{
+        margin-right: 0;
+        margin-left: 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .action-icon-col{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .action-icon::before{
+        position: relative !important;
+        margin:0;
+        margin-left: 1.8em;
+    margin-right: 1.8em;
+    }
+}
+
+@media (max-width: 340px){
+    .expense-item{
+        top: 0em;
+        margin-right: 0.3em;
+    }
+}
+
+@media (max-width: 336px){
+    .expense-item{
+        top:1em;
+        left: 1.5em;
+    }
+}
+
+.expense-item-category-icon>*{
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.expense-item-category-icon{
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.expense-item-category-icon-div{
+    width:100%;
+    height: 75%;
+    border-radius: 50%;
+    background: rgb(250,92,66);
+    background: linear-gradient(146deg, rgba(250,92,66,1) 0%, rgba(236,29,69,1) 100%);
+}
+
+.expense-item-category-icon>div>i{
+    font-size: 3em;
+    color:white;
+}
+
+.expense-item-pet-picture{
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.expense-item-content-main-info>.expense-item-elements{
+    place-content: center;
+    align-items: center;
+    height: min-content;
+}
+
+.value-item{
+    font-size: 35px;
+    color: rgb(250,92,66);
+    color: linear-gradient(146deg, rgba(250,92,66,1) 0%, rgba(236,29,69,1) 100%);
+}
+
+.expense-item-elements{
+    font-weight: 600 !important;
+}
+
+.expense-item-content-main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-self: center;
+    align-items: flex-start;
+}
+
+.action-icon:before{
+    position: absolute;
+    font-size:25px !important;
+    background: rgb(250,92,66);
+    background: linear-gradient(146deg, rgba(250,92,66,1) 0%, rgba(236,29,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    right:2px;
+}
+
+.action-icon{
+    margin:1.5em;
+}
+
+.action-icon-col{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.action-icon-first{    
+    margin-top: 0 !important;
+}
+
+.action-icon-last{
+    margin-bottom: 0 !important;
+}
+
+.figure-pet-name{
+    text-align: center;
+    color: #333333;
+    font-size: 0.7em;
+}
+
+.figure-pet{
+    border-radius:7%;
+}
+
+.figure-pet-default{
+    color: rgb(250,92,66);  
+}

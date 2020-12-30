@@ -1,0 +1,46 @@
+.page404{
+    background: url("../svg/not-found-bg.svg") center top no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.page404-illustration svg{
+    max-height: 60vh;
+    margin-right: 4%;
+}
+
+.page404-title{
+    font-weight: bold;
+}
+
+.page404-subtitle{
+    margin: 2rem;
+}
+
+.page404-btn{
+    margin-top: 2rem;
+}
+
+@media (max-width: 1400px) {
+    .page404-illustration svg{
+        max-height: 50vh;
+    }
+}
+@media (max-width: 992px) {
+    .page404-illustration svg{
+        width: 90vw;
+        margin: 5vh 0;
+    }
+    .page404-title{
+        font-size: 1.75rem;
+        margin: 0 0.25rem;
+    }
+    .page404-btn{
+        margin-top: 10vh;
+    }
+}
+@media (max-width: 320px) {
+    .page404-btn{
+        margin-top: 0;
+    }
+}

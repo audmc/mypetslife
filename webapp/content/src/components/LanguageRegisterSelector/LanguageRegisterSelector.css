@@ -1,0 +1,36 @@
+.language-register-selector{
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.flag-selection{
+    width: 10%;
+    display: inline-flex;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 425px) {
+    .language-register-selector-flag {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .language-register-selector-flag {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .language-register-selector-flag {
+        width: 1rem;
+        height: 1rem;
+    }
+}

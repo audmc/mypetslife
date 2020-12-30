@@ -1,0 +1,494 @@
+.show-password {
+    color: #13E2BA !important;
+    position: absolute;
+    line-height: 18px;
+}
+
+.register-form-container .show-password {
+    right: 20%;
+}
+
+.show-password:active, .show-password:focus {
+    box-shadow: none;
+}
+
+.show-flag {
+    position: absolute;
+    left: 20%;
+    line-height: 18px;
+    padding-top: 3px;
+}
+
+.show-flag:active, .show-flag:focus {
+    box-shadow: none;
+}
+
+.right-icon-input-phone {
+    padding-left: 50px !important;
+}
+
+.register-logo-container {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.col-right-container {
+    align-items: center;
+    padding: 1.5rem 0;
+    height: 100%;
+}
+
+.small-form {
+    display: flex;
+    padding-bottom: 20%;
+}
+
+#password-input {
+    padding-right: 3rem;
+}
+
+.register-form-container {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.register-logo {
+    width: 60%;
+    margin-top: 1.5rem;
+}
+
+.register-container {
+    margin: 0;
+}
+
+.register-main-title {
+    color: #13E2BA;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.register-subtitle {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #8F8F8F;
+    width: 70%;
+    margin: auto auto 0.5rem auto;
+    text-align: justify;
+}
+
+
+.register-error-label {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: #ED1944;
+    font-size: 0.6rem;
+    width: 70%;
+    text-align: justify;
+    display: none;
+    margin: auto auto 0.3rem auto;
+}
+
+.register-input {
+    background-color: #F2F2F2;
+    border: none;
+    width: 70%;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    color: #13E2BA;
+    line-height: 1.8rem;
+    border-radius: 5px;
+}
+
+.register-input:focus {
+    background-color: transparent;
+    outline-color: #13E2BA;
+}
+
+.not-empty {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    background-color: transparent;
+    outline-color: #13E2BA;
+}
+
+textarea {
+    resize: none;
+}
+
+.icon-choice {
+    text-align: center;
+    width: 100%;
+}
+
+.nac-choice {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.choice-container {
+    width: 70%;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.forgot-password {
+    color: #13E2BA !important;
+    cursor: pointer;
+    width: 70%;
+}
+
+.register-illustration svg {
+    height: 85vh;
+    margin: 1.5rem auto auto auto;
+    padding: 0;
+    max-width: 50vw;
+}
+
+.register-illustration {
+    background-color: #fafafa;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    height: 100%;
+}
+
+.checkbox-container {
+    font-size: 0.7rem;
+    width: 70%;
+    margin: 10px auto auto auto;
+    font-family: Montserrat, sans-serif;
+    text-align: justify;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Google Location dropdown styling */
+.pac-matched {
+    color: #13E2BA !important;
+}
+
+.pac-item:hover {
+    background-color: lightblue !important;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.google-margin-bottom {
+    margin-bottom: 80px;
+}
+
+/* Hide arrow for number type input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    margin: auto;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border: 1px solid #13E2BA;
+    border-radius: 5px;
+}
+
+.checkbox-label {
+    margin-left: 1.5rem;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #13E2BA;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.register-checkbox {
+    border-color: #13E2BA;
+}
+
+.flag-asset {
+    width: 20px;
+}
+
+.sex-input {
+    height: 1.8rem;
+    width: 70%;
+    background-color: #F2F2F2;
+    border: none;
+    margin: auto auto 0.5rem auto;
+    padding-top: 4px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #8F8F8F;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #13E2BA;
+    border: solid 0px #13E2BA;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    top: 2px;
+}
+
+input:checked + .slider {
+    background-color: #ED1944;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #ED1944;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(7px);
+    -ms-transform: translateX(7px);
+    transform: translateX(7px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 18px;
+    border: #ED1944 solid 0px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Styling for DayPicker input */
+
+.DayPickerInput input{
+    background-color: #F2F2F2;
+    border: none;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    color: #13E2BA;
+    line-height: 1.8rem;
+    border-radius: 5px;
+}
+
+.DayPickerInput input:focus{
+    background-color: #ffffff;
+    border: solid 1.5px #13E2BA;
+    outline: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    color: #13E2BA;
+}
+
+.react-tel-input input:focus{
+    background-color: #ffffff !important;
+    border: solid 1.5px #13E2BA !important;
+}
+
+@media (max-width: 1725px) {
+    .forgot-password {
+        width: 70%
+    }
+}
+
+@media (max-width: 1440px) {
+    .show-password {
+        right: 20%;
+    }
+}
+
+@media (max-width: 991px) {
+    .register-illustration {
+        display: none;
+    }
+
+    .show-password {
+        right: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .forgot-password {
+        width: 100%;
+        margin-left: 15%;
+    }
+
+    .show-password {
+        right: 20%;
+    }
+}
+
+@media (max-width: 426px) {
+    .show-flag {
+        left: 15%;
+    }
+
+    .forgot-password {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .register-main-title {
+        font-size: 1.2rem !important;
+    }
+
+    #password-input {
+        padding-right: 2rem;
+    }
+
+    .register-main-title {
+        font-size: 1.5rem;
+    }
+
+    .register-subtitle {
+        width: 100%;
+    }
+
+    .label-input-mpl {
+        width: 100%;
+    }
+
+    .input-mpl {
+        width: 100%;
+    }
+
+    .sex-input {
+        width: 100%;
+    }
+
+    .register-error-label {
+        width: 100%;
+    }
+
+    .checkbox-container {
+        width: 100%;
+    }
+
+    .show-password {
+        right: 11%;
+    }
+
+    .choice-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 376px) {
+    .col-right-container {
+        padding-bottom: 20vh;
+    }
+
+    .nac-choice {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .register-logo {
+        margin-top: 2rem;
+    }
+
+    .show-password {
+        right: 14%;
+    }
+
+    .choice-container {
+        width: 100%;
+    }
+
+    .nac-choice {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

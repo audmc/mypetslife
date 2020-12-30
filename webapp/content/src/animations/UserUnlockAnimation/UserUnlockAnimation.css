@@ -1,0 +1,44 @@
+#Hands {
+    animation: Hands 3s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+#Hairs {
+    animation: Hairs 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#LockerUnlocked {
+    animation: LockerUnlocked 3s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes Hands {
+    from {
+        transform: rotateX(0deg) rotateZ(1deg);
+    }
+    to {
+        transform: rotateX(3deg) rotateZ(-1deg);
+    }
+}
+
+
+@keyframes Hairs {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(5deg) rotateZ(5deg);
+    }
+}
+
+@keyframes LockerUnlocked {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}

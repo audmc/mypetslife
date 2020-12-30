@@ -1,0 +1,61 @@
+.login-div{
+    border-radius: 15px;
+    margin: auto;
+    width: 30%;
+    position: relative;
+}
+
+.show-password {
+    color: #13E2BA !important;
+    position: absolute;
+    right: 15%;
+    line-height: 14px;
+}
+
+.show-password:active, .show-password:focus {
+    box-shadow: none;
+}
+
+#password-input {
+    padding-right: 3rem;
+}
+
+.register-error-label {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    color: #ED1944;
+    font-size: 0.6rem;
+    width: 70%;
+    text-align: justify;
+    display: none;
+    margin: auto auto 0.3rem auto;
+}
+
+.forgot-password {
+    cursor: pointer;
+    width: 70%;
+}
+
+@media (max-width: 1600px) {
+    .login-div{
+        width: 40%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .login-div{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .login-div{
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    .login-div{
+        width: 90%;
+    }
+}

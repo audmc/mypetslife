@@ -1,0 +1,58 @@
+const WEEKDAYS_LONG = {
+    en: [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+    ],
+    it: [
+        'Domenica',
+        'Lunedì',
+        'Martedì',
+        'Mercoledì',
+        'Giovedì',
+        'Venerdì',
+        'Sabato',
+    ],
+    de: [
+        'Sonntag',
+        'Montag',
+        'Dienstag',
+        'Mittwoch',
+        'Donnerstag',
+        'Freitag',
+        'Samstag',
+    ],
+    fr: [
+        'Dimanche',
+        'Lundi',
+        'Mardi',
+        'Mercredi',
+        'Jeudi',
+        'Vendredi',
+        'Samedi',
+    ],
+    es: [
+        'Domingo',
+        'Lunes',
+        'Martes',
+        'Miércoles',
+        'Jueves',
+        'Viernes',
+        'Sábado',
+    ],
+    pt: [
+        'Domingo',
+        'Segunda-feira',
+        'Terça',
+        'Quarta',
+        'Quinta',
+        'Sexta-feira',
+        'Sábado',
+    ],
+};
+
+export default WEEKDAYS_LONG;

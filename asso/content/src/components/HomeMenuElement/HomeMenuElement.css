@@ -1,0 +1,80 @@
+.home-app-div {
+    height: 160px;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    padding: 20px 10px 0 10px;
+    cursor: pointer;
+}
+
+.home-app-div p {
+    margin: 0;
+    color: #707070;
+}
+
+.home-app-div:hover {
+    background-color: #13E2BA;
+}
+
+.home-app-div:hover p {
+    color: white;
+}
+
+.home-app-div:hover .app-icon {
+    filter: invert(99%) sepia(73%) saturate(67%) hue-rotate(151deg) brightness(117%) contrast(93%);
+}
+
+.app-icon {
+    height: 75px;
+    margin-bottom: 0.5rem;
+    filter: invert(77%) sepia(87%) saturate(508%) hue-rotate(98deg) brightness(95%) contrast(85%);
+}
+
+.home-app-title {
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .home-app-div {
+        margin-bottom: 10px;
+        height: 115px;
+    }
+
+    .home-app-container{
+        max-width: 500px;
+    }
+
+    .app-icon {
+        height: 50px;
+        margin-bottom: 0.5rem;
+    }
+
+    .home-app-title {
+        height: 40px;
+    }
+}
+
+@media (max-width: 630px) {
+    .home-app-div {
+        height: 130px;
+    }
+}
+
+@media (max-width: 425px) {
+    .home-app-div {
+        height: 130px;
+    }
+}
+
+@media (max-width: 325px) {
+    .home-app-container{
+        width: 100%;
+    }
+
+    .home-app-title {
+        width: 100%;
+    }
+}

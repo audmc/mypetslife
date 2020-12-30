@@ -1,0 +1,219 @@
+.adoption-main-title {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.adoption-container {
+    padding: 0 5%;
+}
+
+.adoption-navigation {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.adoption-nav-left {
+    width: 50%;
+    display: flex;
+}
+
+.adoption-nav-item {
+    text-align: center;
+    line-height: 2rem;
+    flex: 1;
+    font-family: Montserrat, sans-serif;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    background: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.adoption-nav-item-active {
+    background: #13e2C1;
+    color: #FFFFFF;
+}
+
+.adoption-searchbar {
+    width: 50%;
+    display: flex;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    background: -webkit-linear-gradient(45deg, #13E2BA 50%, #13E2E2);
+}
+
+.adoption-search-input {
+    background: #FFFFFF;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.adoption-search-input i {
+    margin-left: 10px;
+}
+
+.adoption-search-input input {
+    background: transparent;
+    border: none;
+    margin-left: .5rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.adoption-pet-list {
+    background: #FFFFFF;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    height: 65vh;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+#adoption-search-input::placeholder{
+    color:  #13e2C1;
+    font-family: Montserrat, sans-serif;
+}
+
+#adoption-search-input:focus{
+    outline: none;
+}
+
+.adoption-pet-card {
+    background: #FFFFFF;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    height: 65vh;
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 15px;
+}
+
+.adoption-selector-active{
+    background-color: #13e2ba !important;
+}
+
+.adoption-right-selector{
+    background-color: #F6F6F6;
+    width: 50%;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.adoption-selector-text{
+    width: fit-content;
+    margin: auto;
+}
+
+.adoption-left-selector{
+    width: 50%;
+    background-color: #F6F6F6;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.adoption-selector-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.adoption-selector-container p{
+    margin: auto;
+}
+
+.adoption-small{
+    font-size: 0.8rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.adoption-pet-details {
+    background: #FFFFFF;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    margin-right: .5rem;
+    height: 65vh;
+}
+
+.adoption-big-button{
+    height: 75px;
+    background-color: #13e2ba;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.adoption-big-button p{
+    margin: auto;
+}
+
+.adoption-blue-title{
+    height: 1.5rem;
+    background-color: #13e2ba;
+    border-radius: 6px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin-left: 5px;
+    color: white;
+}
+
+.dragContainer {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.dragHandler {
+    padding: 1px 5px;
+    cursor: grab;
+    border: 0 solid;
+}
+
+.dragElement {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    background: #ffffff;
+}
+
+.folders-users{
+    background-color: #F6F6F6;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.folders-users-container{
+    height: 140px !important;
+    overflow-y: auto;
+}
+
+.folders-users p{
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width:900px){
+    .adoption-big-button{
+        height: fit-content;
+    }
+
+    .folders-users-container {
+        height: 200px !important;
+    }
+}

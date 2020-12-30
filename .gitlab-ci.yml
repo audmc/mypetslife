@@ -1,0 +1,57 @@
+image: node:latest
+
+webapp-test:
+  stage: test
+  script:
+    - cd webapp/content
+    - npm install
+    - npm run test
+  when: manual
+  except:
+    - dev
+#  tags:
+#    - dev-deploy
+
+asso-test:
+  stage: test
+  script:
+    - cd asso/content
+    - npm install
+    - npm run test
+  when: manual
+  except:
+    - dev
+#  tags:
+#    - dev-deploy
+
+#server-test:
+#  stage: test
+#  script:
+#    - cd server/src
+#    - npm install
+#    - npm start
+#    - npm run test
+
+dashboard-test:
+  stage: test
+  script:
+    - cd dashboard/content
+    - npm install
+    - npm run test
+  when: manual
+  except:
+    - dev
+#  tags:
+#    - dev-deploy
+
+dev-deploy:
+  stage: deploy
+  script:
+    - docker-compose down --rmi 'local' --remove-orphans
+    - docker-compose build --no-cache
+    - docker-compose up -d
+    - docker images -q --no-trunc -f dangling=true | xargs -r docker rmi
+  only:
+    - dev
+  tags:
+    - dev-deploy

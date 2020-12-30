@@ -1,0 +1,66 @@
+.popup-edit-personnal-section {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+
+.popup-edit-personnal-section-header {
+    text-align: center;
+    color: #13e2ba;
+}
+
+.popup-edit-personnal-section-body hr {
+    width: 90%;
+}
+
+.popup-edit-personnal-section-body .section-title {
+    color: #ED1944;
+    margin-top: 1.5rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.popup-edit-personnal-section-body .section-breakline {
+    border-bottom: 1px solid #ED1944;
+    margin-bottom: 1.5rem;
+    width: 200px;
+}
+
+.popup-edit-personnal-section-body .DayPickerInput {
+    width: 100%;
+}
+
+.popup-edit-personnal-section-body .DayPickerInput input {
+    border: none;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 0.5rem;
+    color: #999999;
+    line-height: 2rem;
+    padding-left: 2.5rem;
+    border-radius: 5px;
+    font-family: Montserrat, sans-serif;
+    background-color: #fff;
+}
+
+.popup-edit-personnal-section-body .DayPickerInput input:focus {
+    color: #333333;
+    outline: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+}
+
+.pac-container {
+    z-index: 1035;
+}
+
+@media (max-width: 425px) {
+    .popup-edit-personnal-section {
+        padding: 1rem 0;
+    }
+
+    .popup-edit-personnal-section-body{
+        overflow-y: scroll;
+        padding: 0 1rem;
+        height: 80vh;
+    }
+}

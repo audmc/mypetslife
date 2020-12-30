@@ -1,0 +1,30 @@
+.cgu-container{
+    height: 100%;
+    overflow-y: scroll;
+    text-align: justify;
+}
+
+.cgu-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.cgu-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.cgu-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #13e2ba;
+}
+
+@media (max-width: 425px) {
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h5, h3{
+        font-size: 1.1rem;
+    }
+}

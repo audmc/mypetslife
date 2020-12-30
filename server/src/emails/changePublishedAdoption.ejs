@@ -1,0 +1,110 @@
+<%- include('emailStylesheet')%>
+
+<body style="padding: 0; margin: 0;" bgcolor="#eeeeee">
+
+<table class="full-width-container" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="#eeeeee" style="width: 100%; height: 100%; padding: 30px 0 30px 0;">
+    <tr>
+        <td align="center" valign="top">
+            <table class="container" border="0" cellpadding="0" cellspacing="0" width="700" bgcolor="#ffffff" style="width: 700px;">
+                <tr>
+                    <td align="center" valign="top">
+                        <%- include('emailHeader')%>
+                        <table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                            <tr>
+                                <td class="hero-subheader__title" width="100%" style="font-size: 32px; font-weight: bold; padding: 15px 0; font-family: 'Comfortaa'" align="left">
+                                    <% if (tr === "en") { %>
+                                            Change of the status of your adoption application!
+                                    <% } else if (tr === "de"){ %>
+                                            Ändern Sie den Status Ihrer Anwendung zur Adoption!
+                                    <% } else if (tr === "it"){ %>
+                                            Modifica dello stato della tua domanda di adozione!
+                                    <% } else if (tr === "es"){ %>
+                                            ¡Cambio de estado de su solicitud de adopción!
+                                    <% } else if (tr === "pt"){ %>
+                                            Mudança do status do seu pedido de adoção!
+                                    <% } else { %>
+                                            Changement du status de votre demande d'adoption !
+                                    <% } %>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #8F8F8F; padding-bottom: 16px; font-family: 'Comfortaa', sans-serif" align="left">
+                                <% if (tr === "en") { %>
+                                        Hello,
+                                        <br/>
+                                        <br/>
+                                        We inform you that the adoption announcement for <%= petName%> has just been <%= adoptionStatus%>
+                                        <br/>
+                                        Go to your personal space by clicking on the button below to find out more!
+                                <% } else if (tr === "de"){ %>
+                                        Hallo,
+                                        <br/>
+                                        <br/>
+                                        Wir informieren Sie, dass die Annahme Anzeige für <%= petName%> nur <%= adoptionStatus%>
+                                        <br/>
+                                        Gehen Sie zu Ihrem persönlichen Konto, indem Sie den button klicken um mehr zu erfahren!
+                                <% } else if (tr === "it"){ %>
+                                        Buongiorno,
+                                        <br/>
+                                        <br/>
+                                        Ti informiamo che l'annuncio di adozione di <%= petName%> è appena stato <%= adoptionStatus%>
+                                        <br/>
+                                        Accedi al tuo spazio personale cliccando sul pulsante qui sotto per saperne di più!
+                                <% } else if (tr === "es"){ %>
+                                        Buenos dias,
+                                        <br/>
+                                        <br/>
+                                        Le informamos que el anuncio de adopción de <%= petName%> acaba de ser <%= adoptionStatus%>
+                                        <br/>
+                                        ¡Vaya a su espacio personal haciendo clic en el botón de abajo para obtener más información!
+                                <% } else if (tr === "pt"){ %>
+                                        Olá,
+                                        <br/>
+                                        <br/>
+                                        Informamos que o anúncio de adoção de <%= petName%> acaba de ser <%= adoptionStatus%>
+                                        <br/>
+                                        Acesse seu espaço pessoal clicando no botão abaixo para saber mais!
+                                <% } else { %>
+                                        Bonjour,
+                                        <br/>
+                                        <br/>
+                                        Nous vous informons que l'annonce d'adoption concernant <%= petName%> vient d'être <%= adoptionStatus%>
+                                        <br/>
+                                        Rendez-vous sur votre espace personnel en cliquant sur le bouton ci dessous pour en savoir plus!
+                                <% } %>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container paragraph-block" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                                        <td class="cta-block__button" width="230" align="center" style="width: 200px;">
+                                            <a href="mypetslife.co" style="border: 2px solid #13E2BA; color: #13E2BA; text-decoration: none; padding: 15px; text-transform: uppercase; display: block; text-align: center; font-size: 16px; font-weight: bold;border-radius: 5px">
+                                                MyPetsLife.co
+                                            </a>
+                                        </td>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-top: 25px;" align="center">
+                            <tr>
+                                <td align="center">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="border-bottom: solid 1px #eeeeee; width: 620px;">
+                                        <tr>
+                                            <td align="center">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <%- include('emailFooter') %>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+

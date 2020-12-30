@@ -1,0 +1,111 @@
+.adoption-app-div {
+    height: 160px;
+    width: 160px;
+    background-color: #13E2BA;
+    border-radius: 15px;
+    padding: 20px 10px 0 10px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.last-menu{
+    margin-bottom: 0 !important;
+}
+
+.adoption-app-div p {
+    margin: 0;
+    color: white;
+}
+
+.adoption-app-div .adoption-app-icon {
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(151deg) brightness(117%) contrast(100%);
+}
+
+.adoption-menu-div {
+    min-height: 2.2rem;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    margin: auto auto 0.8rem auto;
+    cursor: pointer;
+    display: flex;
+}
+
+.adoption-menu-div p {
+    margin: 0;
+    color: #707070;
+}
+
+.adoption-menu-div:hover {
+    background-color: #13E2BA;
+}
+
+.adoption-menu-div:hover p {
+    color: white;
+}
+
+.adoption-app-icon {
+    height: 75px;
+    margin-bottom: 0.5rem;
+    filter: invert(77%) sepia(87%) saturate(508%) hue-rotate(98deg) brightness(95%) contrast(85%);
+}
+
+.adoption-app-title {
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.adoption-menu-title {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .menu-container{
+        width: 100% !important;
+    }
+
+    .adoption-app-div {
+        margin-bottom: 10px;
+        height: 115px;
+    }
+
+    .adoption-app-container{
+        max-width: 500px;
+    }
+
+    .adoption-app-icon {
+        height: 50px;
+        margin-bottom: 0.5rem;
+    }
+
+    .adoption-app-title {
+        height: 40px;
+    }
+}
+
+@media (max-width: 630px) {
+    .adoption-app-div {
+        height: 130px;
+    }
+}
+
+@media (max-width: 425px) {
+    .adoption-app-div {
+        height: 130px;
+    }
+}
+
+@media (max-width: 325px) {
+    .adoption-app-container{
+        width: 100%;
+    }
+
+    .adoption-app-title {
+        width: 100%;
+    }
+}

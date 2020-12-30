@@ -1,0 +1,15 @@
+.profile-info-element i {
+    margin-right: .75rem;
+    width: 1rem;
+    text-align: center;
+}
+
+.profile-info-element{
+    margin-bottom: .25rem;
+}
+
+.profile-info-element-undefined{
+    font-size: .9rem;
+    font-style: italic;
+    color: rgba(51, 51, 51, 0.8);
+}

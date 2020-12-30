@@ -1,0 +1,128 @@
+<%- include('emailStylesheet')%>
+
+<body style="padding: 0; margin: 0;" bgcolor="#eeeeee">
+
+<table class="full-width-container" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="#eeeeee" style="width: 100%; height: 100%; padding: 30px 0 30px 0;">
+    <tr>
+        <td align="center" valign="top">
+            <table class="container" border="0" cellpadding="0" cellspacing="0" width="700" bgcolor="#ffffff" style="width: 700px;">
+                <tr>
+                    <td align="center" valign="top">
+                        <%- include('emailHeader')%>
+                        <table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                            <tr>
+                                <td class="hero-subheader__title" width="100%" style="font-size: 32px; font-weight: bold; padding: 15px 0; font-family: 'Comfortaa'" align="left">
+                                    <% if (tr === "en") { %>
+                                        Study of your file
+                                    <% } else if (tr === "de"){ %>
+                                        Studium Ihrer Akte
+                                    <% } else if (tr === "it"){ %>
+                                        Studio del tuo file
+                                    <% } else if (tr === "es"){ %>
+                                        Estudio de su expediente
+                                    <% } else if (tr === "pt"){ %>
+                                        Estudo do seu arquivo
+                                    <% } else { %>
+                                        Étude de votre dossier
+                                    <% } %>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #8F8F8F; padding-bottom: 16px; font-family: 'Comfortaa', sans-serif" align="left">
+                                <% if (tr === "en") { %>
+                                        Hello !
+                                        <br/>
+                                        <br/>
+                                        Your adoption application file concerning <%= petName%> has just been studied. Unfortunately, this association did not wish to respond to your request.
+                                        <br/>
+                                        <br/>
+                                        We continue to support you in your search, click to see other animals to adopt!
+                                <% } else if (tr === "de"){ %>
+                                        Hallo !
+                                        <br/>
+                                        <br/>
+                                        Ihre Adoptionsantragsdatei zu <%= petName%> wurde gerade untersucht. Leider wollte dieser Verein nicht auf Ihre Anfrage antworten.
+                                        <br/>
+                                        <br/>
+                                        Wir unterstützen Sie weiterhin bei Ihrer Suche. Klicken Sie hier, um andere Tiere zur Adoption zu sehen!
+                                <% } else if (tr === "it"){ %>
+                                        Buongiorno !
+                                        <br/>
+                                        <br/>
+                                        Il tuo file di domanda di adozione relativo a <%= petName%> è stato appena esaminato. Purtroppo questa associazione non ha voluto rispondere alla tua richiesta.
+                                        <br/>
+                                        <br/>
+                                        Continuiamo a supportarti nella tua ricerca, clicca per vedere altri animali da adottare!
+                                <% } else if (tr === "es"){ %>
+                                        Buenos dias !
+                                        <br/>
+                                        <br/>
+                                        Su archivo de solicitud de adopción relativo a <%= petName%> acaba de ser estudiado. Desafortunadamente, esta asociación no quiso responder a su solicitud.
+                                        <br/>
+                                        <br/>
+                                        Seguimos apoyándote en tu búsqueda, ¡haz clic para ver otros animales para adoptar!
+                                <% } else if (tr === "pt"){ %>
+                                        Olá !
+                                        <br/>
+                                        <br/>
+                                        Seu arquivo de solicitação de adoção relativo a <%= petName%> acaba de ser estudado. Infelizmente, esta associação não quis responder à sua solicitação.
+                                        <br/>
+                                        <br/>
+                                        Continuamos apoiando você em sua busca, clique para ver outros animais para adotar!
+                                <% } else { %>
+                                        Bonjour !
+                                        <br/>
+                                        <br/>
+                                        Votre dossier de demande d'adoption concernant <%= petName %> vient d'être étudié. Malheureusement, cette association n'a pas souhaité donner suite à votre demande.
+                                        <br/>
+                                        <br/>
+                                        Nous continuons de vous accompagner dans votre recherche, cliquez pour voir les autres animaux à adopter !
+                                <% } %>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container paragraph-block" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+                                        <td class="cta-block__button" width="230" align="center" style="width: 200px;">
+                                            <a href="mypetslife.co/adoption" style="border: 2px solid #13E2BA; color: #13E2BA; text-decoration: none; padding: 15px; text-transform: uppercase; display: block; text-align: center; font-size: 16px; font-weight: bold;border-radius: 5px">
+                                                <% if (tr === "en") { %>
+                                                    ADOPTION ANNOUNCEMENTS
+                                                <% } else if (tr === "de"){ %>
+                                                        ANNAHMEANKÜNDIGUNGEN
+                                                <% } else if (tr === "it"){ %>
+                                                        ANNUNCI DI ADOZIONE
+                                                <% } else if (tr === "es"){ %>
+                                                        ANUNCIOS DE ADOPCIÓN
+                                                <% } else if (tr === "pt"){ %>
+                                                        ANÚNCIOS DE ADOÇÃO
+                                                <% } else { %>
+                                                        ANNONCES D'ADOPTION
+                                                <% } %>
+                                            </a>
+                                        </td>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-top: 25px;" align="center">
+                            <tr>
+                                <td align="center">
+                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="border-bottom: solid 1px #eeeeee; width: 620px;">
+                                        <tr>
+                                            <td align="center">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <%- include('emailFooter') %>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+
