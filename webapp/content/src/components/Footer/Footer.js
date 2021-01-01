@@ -3,7 +3,7 @@ import './Footer.css'
 import logo from '../../svg/logo-white.svg'
 import facebook from '../../svg/icon-facebook.svg'
 import instagram from '../../svg/icon-instagram.svg'
-import twitter from '../../svg/icon-twitter.svg'
+//import twitter from '../../svg/icon-twitter.svg'
 import linkedin from '../../svg/icon-linkedin.svg'
 
 import {useTranslation} from "react-i18next";
@@ -50,9 +50,7 @@ export default function Footer() {
                     <img draggable={false} src={instagram} alt={"Instagram"} onClick={() => {
                         window.open('https://www.instagram.com/mypetslife.co')
                     }}/>
-                    <img draggable={false} src={twitter} alt={"Twitter"} onClick={() => {
-                        window.open('https://twitter.com/MyPetsLife_')
-                    }}/>
+
                     <img draggable={false} src={linkedin} alt={"Linkedin"} className="last-icon" onClick={() => {
                         window.open('https://www.linkedin.com/company/my-pets-life')
                     }}/>
